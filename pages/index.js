@@ -1,14 +1,40 @@
-import Nav from '../components/nav'
+import Link from "next/link";
 
 export default function IndexPage() {
-  return (
-    <div>
-      <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-accent-1">
-          Next.js + Tailwind CSS
-        </h1>
-      </div>
-    </div>
-  )
+    return (
+        <div>
+            <div className='py-20'>
+                <h1 className='text-5xl text-center text-accent-1'>
+                    Adventures Ahead: Hooked on Phonics
+                </h1>
+            </div>
+
+            <section className='cards md:grid-cols-2 lg:grid-cols-3'>
+                <Link href='/hop/vowels'>
+                    <a className='card card-purple'>Vowels</a>
+                </Link>
+                <Link href='/hop/beginning-digraphs'>
+                    <a className='card card-orange'>Beginning Digraphs</a>
+                </Link>
+                <Link href='/hop/beginning-sblends'>
+                    <a className='card card-orange'>Beginning S-Blends</a>
+                </Link>
+                <Link href='/hop/beginning-lblends'>
+                    <a className='card card-orange'>Beginning L-Blends</a>
+                </Link>
+                <Link href='/hop/beginning-rblends'>
+                    <a className='card card-orange'>Beginning R-Blends</a>
+                </Link>
+                <Link href='/hop/ending-digraphs'>
+                    <a className='card card-red'>Ending Digraphs</a>
+                </Link>
+                <Link href='/hop/ending-blends'>
+                    <a className='card card-red'>Ending Blends</a>
+                </Link>
+                <Link href='/hop/suffixes'>
+                    <a className='card card-red'>Suffixes</a>
+                </Link>
+            </section>
+        </div>
+    );
 }

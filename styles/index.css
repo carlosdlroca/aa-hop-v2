@@ -7,12 +7,51 @@
 /* Stop purging. */
 
 /* Write your own custom component styles here */
-.btn-blue {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-}
 
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+@layer components {
+  .btn-blue {
+    @apply bg-green-500 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .cards {
+    @apply grid grid-cols-1 gap-8 justify-items-center pb-12 gap-y-16;
+    margin: 0 auto;
+    width: min(95vw, 65rem);
+  }
+
+  .card {
+    @apply text-2xl font-bold font-sans grid place-items-center shadow text-white rounded;
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .card:hover {
+    @apply transition-all duration-200 ease-in cursor-pointer transform scale-110;
+  }
+
+  .card-orange {
+    @apply bg-orange-400;
+  }
+
+  .card-red {
+    @apply bg-red-500;
+  }
+
+  .card-green {
+    @apply bg-green-500;
+  }
+
+  .card-blue {
+    @apply bg-blue-500;
+  }
+
+  .card-purple {
+    @apply bg-purple-500;
+  }
+}
