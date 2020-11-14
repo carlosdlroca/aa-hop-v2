@@ -1,6 +1,0 @@
---
-    focus: (string) the focus letter/vowel/sound the words are about
-    single: (boolean) true if word will not be split up into sections
-    wordPart: (string) the part we are splitting the word on c|ow, t|ow, p|ow----- ow would be the wordPart
-    partPosition: (string) the position the split word part will be in, either "start" or "end",
-    wordCaps: [(strings)] an array of strings that finish the wordPart
