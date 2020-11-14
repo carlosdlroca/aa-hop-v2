@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Course({ course, file }) {
     return (
-        <div className='h-screen bg-teal-200'>
+        <div className='h-screen'>
             <Link href='/'>
                 <a>Home</a>
             </Link>
