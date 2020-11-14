@@ -1,353 +1,310 @@
-[
-    {
-        "focus": "a",
-        "wordPart": "at",
-        "partPosition": "end",
-        "wordCaps": [
-            "m",
-            "s",
-            "r",
-            "b",
-            "c",
-            "p",
-            "f",
-            "h",
-            "P"
-        ]
-    },
-    {
-        "focus": "a",
-        "wordPart": "an",
-        "partPosition": "end",
-        "wordCaps": [
-            "m",
-            "f",
-            "J",
-            "c",
-            "D",
-            "p",
-            "R",
-            "t",
-            "v"
-        ]
-    },
-    {
-        "focus": "a",
-        "wordPart": "ap",
-        "partPosition": "end",
-        "wordCaps": [
-            "m",
-            "s",
-            "r",
-            "n",
-            "c",
-            "g",
-            "l",
-            "t",
-            "z"
-        ]
-    },
-    {
-        "focus": "a",
-        "wordPart": "ag",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "s",
-            "r",
-            "w",
-            "t"
-        ]
-    },
-    {
-        "focus": "a",
-        "wordPart": "ad",
-        "partPosition": "end",
-        "wordCaps": [
-            "m",
-            "s",
-            "d",
-            "b",
-            "h",
-            "f",
-            "p"
-        ]
-    },
-    {
-        "focus": "i",
-        "wordPart": "ig",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "f",
-            "p",
-            "w"
-        ]
-    },
-    {
-        "focus": "i",
-        "wordPart": "id",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "h",
-            "k",
-            "d",
-            "l",
-            "r"
-        ]
-    },
-    {
-        "focus": "i",
-        "wordPart": "it",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "h",
-            "l",
-            "k",
-            "f",
-            "p",
-            "s",
-            "w",
-            "m"
-        ]
-    },
-    {
-        "focus": "i",
-        "wordPart": "in",
-        "partPosition": "end",
-        "wordCaps": [
-            "f",
-            "p",
-            "t",
-            "w",
-            "k"
-        ]
-    },
-    {
-        "focus": "i",
-        "wordPart": "ip",
-        "partPosition": "end",
-        "wordCaps": [
-            "d",
-            "h",
-            "l",
-            "r",
-            "s",
-            "t",
-            "z"
-        ]
-    },
-    {
-        "focus": "o",
-        "wordPart": "ox",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "f"
-        ]
-    },
-    {
-        "focus": "o",
-        "wordPart": "ot",
-        "partPosition": "end",
-        "wordCaps": [
-            "c",
-            "d",
-            "g",
-            "h",
-            "l",
-            "n",
-            "p",
-            "r"
-        ]
-    },
-    {
-        "focus": "o",
-        "wordPart": "og",
-        "partPosition": "end",
-        "wordCaps": [
-            "d",
-            "f",
-            "h",
-            "j",
-            "l"
-        ]
-    },
-    {
-        "focus": "o",
-        "wordPart": "ob",
-        "partPosition": "end",
-        "wordCaps": [
-            "B",
-            "j",
-            "r",
-            "m",
-            "s"
-        ]
-    },
-    {
-        "focus": "o",
-        "wordPart": "op",
-        "partPosition": "end",
-        "wordCaps": [
-            "h",
-            "m",
-            "p",
-            "t"
-        ]
-    },
-    {
-        "focus": "u",
-        "wordPart": "up",
-        "partPosition": "end",
-        "wordCaps": [
-            "",
-            "c",
-            "p"
-        ]
-    },
-    {
-        "focus": "u",
-        "wordPart": "ug",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "d",
-            "h",
-            "j",
-            "m",
-            "r",
-            "t"
-        ]
-    },
-    {
-        "focus": "u",
-        "wordPart": "un",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "g",
-            "n",
-            "r",
-            "s",
-            "f"
-        ]
-    },
-    {
-        "focus": "u",
-        "wordPart": "ub",
-        "partPosition": "end",
-        "wordCaps": [
-            "c",
-            "h",
-            "r",
-            "t"
-        ]
-    },
-    {
-        "focus": "u",
-        "wordPart": "ut",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "c",
-            "g",
-            "h",
-            "n",
-            "r"
-        ]
-    },
-    {
-        "focus": "u",
-        "wordPart": "utt",
-        "partPosition": "end",
-        "wordCaps": [
-            "m"
-        ]
-    },
-    {
-        "focus": "e",
-        "wordPart": "el",
-        "partPosition": "end",
-        "wordCaps": [
-            "M"
-        ]
-    },
-    {
-        "focus": "e",
-        "wordPart": "ell",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "f",
-            "s",
-            "t",
-            "w",
-            "y"
-        ]
-    },
-    {
-        "focus": "e",
-        "wordPart": "ed",
-        "partPosition": "end",
-        "wordCaps": [
-            " ",
-            "b",
-            "f",
-            "l",
-            "r",
-            "T",
-            "w"
-        ]
-    },
-    {
-        "focus": "e",
-        "wordPart": "et",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "g",
-            "j",
-            "l",
-            "m",
-            "n",
-            "p",
-            "s",
-            "v",
-            "w",
-            "y"
-        ]
-    },
-    {
-        "focus": "e",
-        "wordPart": "en",
-        "partPosition": "end",
-        "wordCaps": [
-            "B",
-            "d",
-            "h",
-            "m",
-            "p",
-            "t"
-        ]
-    },
-    {
-        "focus": "e",
-        "wordPart": "eg",
-        "partPosition": "end",
-        "wordCaps": [
-            "b",
-            "l",
-            "p"
-        ]
-    },
-    {
-        "focus": "e",
-        "wordPart": "egg",
-        "partPosition": "end",
-        "single": true,
-        "wordCaps": []
+{
+    "color": "purple",
+    "sounds": {
+        "a": {
+            "ad": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "m",
+                    "s",
+                    "d",
+                    "b",
+                    "h",
+                    "f",
+                    "p"
+                ]
+            },
+            "ag": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "s",
+                    "r",
+                    "w",
+                    "t"
+                ]
+            },
+            "an": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "m",
+                    "f",
+                    "J",
+                    "c",
+                    "D",
+                    "p",
+                    "R",
+                    "t",
+                    "v"
+                ]
+            },
+            "ap": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "m",
+                    "s",
+                    "r",
+                    "n",
+                    "c",
+                    "g",
+                    "l",
+                    "t",
+                    "z"
+                ]
+            },
+            "at": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "m",
+                    "s",
+                    "r",
+                    "b",
+                    "c",
+                    "p",
+                    "f",
+                    "h",
+                    "P"
+                ]
+            }
+        },
+        "e": {
+            "ed": {
+                "partPosition": "end",
+                "wordCaps": [
+                    " ",
+                    "b",
+                    "f",
+                    "l",
+                    "r",
+                    "T",
+                    "w"
+                ]
+            },
+            "eg": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "l",
+                    "p"
+                ]
+            },
+            "egg": {
+                "partPosition": "end",
+                "single": true,
+                "wordCaps": []
+            },
+            "el": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "M"
+                ]
+            },
+            "ell": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "f",
+                    "s",
+                    "t",
+                    "w",
+                    "y"
+                ]
+            },
+            "en": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "B",
+                    "d",
+                    "h",
+                    "m",
+                    "p",
+                    "t"
+                ]
+            },
+            "et": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "g",
+                    "j",
+                    "l",
+                    "m",
+                    "n",
+                    "p",
+                    "s",
+                    "v",
+                    "w",
+                    "y"
+                ]
+            }
+        },
+        "i": {
+            "id": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "h",
+                    "k",
+                    "d",
+                    "l",
+                    "r"
+                ]
+            },
+            "ig": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "f",
+                    "p",
+                    "w"
+                ]
+            },
+            "in": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "f",
+                    "p",
+                    "t",
+                    "w",
+                    "k"
+                ]
+            },
+            "ip": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "d",
+                    "h",
+                    "l",
+                    "r",
+                    "s",
+                    "t",
+                    "z"
+                ]
+            },
+            "it": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "h",
+                    "l",
+                    "k",
+                    "f",
+                    "p",
+                    "s",
+                    "w",
+                    "m"
+                ]
+            }
+        },
+        "o": {
+            "ob": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "B",
+                    "j",
+                    "r",
+                    "m",
+                    "s"
+                ]
+            },
+            "og": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "d",
+                    "f",
+                    "h",
+                    "j",
+                    "l"
+                ]
+            },
+            "op": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "h",
+                    "m",
+                    "p",
+                    "t"
+                ]
+            },
+            "ot": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "c",
+                    "d",
+                    "g",
+                    "h",
+                    "l",
+                    "n",
+                    "p",
+                    "r"
+                ]
+            },
+            "ox": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "f"
+                ]
+            }
+        },
+        "u": {
+            "ub": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "c",
+                    "h",
+                    "r",
+                    "t"
+                ]
+            },
+            "ug": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "d",
+                    "h",
+                    "j",
+                    "m",
+                    "r",
+                    "t"
+                ]
+            },
+            "un": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "g",
+                    "n",
+                    "r",
+                    "s",
+                    "f"
+                ]
+            },
+            "up": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "",
+                    "c",
+                    "p"
+                ]
+            },
+            "ut": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "c",
+                    "g",
+                    "h",
+                    "n",
+                    "r"
+                ]
+            },
+            "utt": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "m"
+                ]
+            }
+        }
     }
-]
+}
