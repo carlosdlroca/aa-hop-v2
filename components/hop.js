@@ -1,5 +1,6 @@
 import { useReducer, useState } from "react";
 import Buttons from "./Buttons";
+import WordDisplay from "./WordDisplay";
 
 const initialState = {
     /**
