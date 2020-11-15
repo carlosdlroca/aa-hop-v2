@@ -1,6 +1,6 @@
 export default function Buttons({ keys, dispatch, activeButtons, color }) {
     return (
-        <section className='buttons flex flex-wrap justify-evenly align-middle max-w-6xl mx-auto'>
+        <section className='buttons flex flex-wrap items-center justify-evenly max-w-6xl mx-auto'>
             {keys.map((key) => (
                 <button
                     className={`${
