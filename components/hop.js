@@ -28,6 +28,7 @@ export default function HOP({ file }) {
             />
             <WordDisplay chosenWord={state.chosenWord} color={file.color} />
             <button
+                className='text-2xl py-2 px-5 bg-gray-100 hover:bg-gray-200'
                 onClick={() => {
                     dispatch({ type: "CHOOSE_WORD" });
                 }}
