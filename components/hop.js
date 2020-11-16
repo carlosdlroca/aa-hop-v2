@@ -26,10 +26,7 @@ export default function HOP({ file }) {
                 dispatch={dispatch}
                 activeButtons={state.activeButtons}
             />
-            <p>
-                {state.chosenWord.wordCap}
-                {state.chosenWord.wordPart}
-            </p>
+            <WordDisplay chosenWord={state.chosenWord} color={file.color} />
             <button
                 onClick={() => {
                     dispatch({ type: "CHOOSE_WORD" });
@@ -76,7 +73,6 @@ function reducerWithFile(file) {
                 return initialState;
             case "CHOOSE_WORD":
                 if (Object.keys(state.words).length < 1) {
-                    console.log("empty word");
                     return { ...state, chosenWord: {} };
                 }
                 const [
