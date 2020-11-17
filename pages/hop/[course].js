@@ -6,7 +6,7 @@ export default function Course({ course, file }) {
     return (
         <div className='h-screen'>
             <Head>
-                <title>{course}</title>
+                <title>{course.split("-").join(" ")}</title>
                 <link rel='shortcut icon' type='image/png' href='/abc.png' />
             </Head>
             <Link href='/'>
@@ -14,7 +14,9 @@ export default function Course({ course, file }) {
                     className={`block bg-arrow bg-contain bg-no-repeat bg-${file.color}-500 w-12 h-12 rounded-full`}
                 ></a>
             </Link>
-            <h1 className='text-5xl text-black'>Course: {course}</h1>
+            <h1 className='text-3xl text-black capitalize'>
+                {course.split("-").join(" ")}
+            </h1>
             <HOP file={file} />
         </div>
     );
