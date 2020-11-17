@@ -9,9 +9,9 @@ module.exports = {
     ],
     theme: {
         extend: {
-            colors: {
-                "accent-1": "#333",
-            },
+            backgroundImage: (theme) => ({
+                arrow: "url('/arrow.svg')",
+            }),
         },
     },
     variants: {},
