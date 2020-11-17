@@ -1,0 +1,105 @@
+{
+    "color": "orange",
+    "words": {
+        "gr": {
+            "gr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ass",
+                    "ab",
+                    "am",
+                    "id",
+                    "ill",
+                    "im",
+                    "in",
+                    "ip",
+                    "it",
+                    "uff",
+                    "eg"
+                ]
+            }
+        },
+        "fr": {
+            "fr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "an",
+                    "ill",
+                    "og",
+                    "ock",
+                    "ed"
+                ]
+            }
+        },
+        "br": {
+            "br": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "an",
+                    "ass",
+                    "ag",
+                    "ad",
+                    "im",
+                    "ick",
+                    "ett"
+                ]
+            }
+        },
+        "cr": {
+            "cr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ab",
+                    "am",
+                    "ack",
+                    "ib",
+                    "op",
+                    "oss"
+                ]
+            }
+        },
+        "pr": {
+            "pr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "im",
+                    "ick",
+                    "om",
+                    "od",
+                    "ess"
+                ]
+            }
+        },
+        "dr": {
+            "dr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ag",
+                    "ab",
+                    "ill",
+                    "ip",
+                    "op",
+                    "um",
+                    "ug",
+                    "ess"
+                ]
+            }
+        },
+        "tr": {
+            "tr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ap",
+                    "am",
+                    "ack",
+                    "ip",
+                    "im",
+                    "ick",
+                    "ot",
+                    "uck",
+                    "ek"
+                ]
+            }
+        }
+    }
+}

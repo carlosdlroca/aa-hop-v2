@@ -1,0 +1,77 @@
+{
+    "color": "red",
+    "words": {
+        "ch": {
+            "ch": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ri",
+                    "whi",
+                    "su",
+                    "mu"
+                ]
+            }
+        },
+        "tch": {
+            "tch": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ca",
+                    "ba",
+                    "ha",
+                    "la",
+                    "ma",
+                    "pa",
+                    "sna",
+                    "di",
+                    "hi",
+                    "wi",
+                    "pi",
+                    "no",
+                    "Du",
+                    "clu",
+                    "fe"
+                ]
+            }
+        },
+        "th": {
+            "th": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ba",
+                    "pa",
+                    "ma",
+                    "mo",
+                    "clo",
+                    "bro",
+                    "Be"
+                ]
+            }
+        },
+        "sh": {
+            "sh": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ca",
+                    "da",
+                    "ma",
+                    "ra",
+                    "sma",
+                    "sta",
+                    "cla",
+                    "tra",
+                    "fla",
+                    "fi",
+                    "wi",
+                    "di",
+                    "hu",
+                    "mu",
+                    "ru",
+                    "blu",
+                    "cru",
+                    "fre"
+                ]
+            }
+        }
+    }
+}

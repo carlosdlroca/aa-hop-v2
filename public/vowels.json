@@ -91,7 +91,9 @@
             "egg": {
                 "partPosition": "end",
                 "single": true,
-                "wordCaps": []
+                "wordCaps": [
+                    "egg"
+                ]
             },
             "el": {
                 "partPosition": "end",

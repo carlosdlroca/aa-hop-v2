@@ -1,0 +1,177 @@
+{
+    "color": "red",
+    "words": {
+        "ing": {
+            "ing": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "batt",
+                    "camp",
+                    "catch",
+                    "stand",
+                    "grasp",
+                    "flash",
+                    "fix",
+                    "fill",
+                    "mix",
+                    "shift",
+                    "sing",
+                    "print",
+                    "bump",
+                    "duck",
+                    "toss",
+                    "yell",
+                    "bend",
+                    "tell"
+                ]
+            }
+        },
+        "er": {
+            "er": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "batt",
+                    "camp",
+                    "catch",
+                    "fast",
+                    "hang",
+                    "mix",
+                    "pitch",
+                    "sing",
+                    "bigg",
+                    "quick",
+                    "swift",
+                    "box",
+                    "long",
+                    "soft",
+                    "hott",
+                    "bump",
+                    "hunt",
+                    "fresh"
+                ]
+            }
+        },
+        "ly": {
+            "ly": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "bad",
+                    "glad",
+                    "quick",
+                    "swift",
+                    "soft",
+                    "grizz",
+                    "cudd",
+                    "dol",
+                    "hol",
+                    "jol",
+                    "ug",
+                    "bel",
+                    "jel",
+                    "Kel",
+                    "smel",
+                    "Bil",
+                    "hil",
+                    "chil"
+                ]
+            }
+        },
+        "es": {
+            "es": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ash",
+                    "match",
+                    "patch",
+                    "dish",
+                    "ditch",
+                    "inch",
+                    "itch",
+                    "pitch",
+                    "wish",
+                    "switch",
+                    "rich",
+                    "box",
+                    "fox",
+                    "loss",
+                    "fetch"
+                ]
+            }
+        },
+        "ed /ed/": {
+            "ed": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "draft",
+                    "raft",
+                    "band",
+                    "last",
+                    "batt",
+                    "craft",
+                    "tilt",
+                    "hint",
+                    "list",
+                    "fitt",
+                    "spott",
+                    "bond",
+                    "rust",
+                    "trust",
+                    "dent",
+                    "blend",
+                    "end",
+                    "rest"
+                ]
+            }
+        },
+        "ed /d/": {
+            "ed": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "grabb",
+                    "plann",
+                    "slamm",
+                    "jamm",
+                    "spill",
+                    "drill",
+                    "chill",
+                    "grill",
+                    "trimm",
+                    "quizz",
+                    "jogg",
+                    "buzz",
+                    "rubb",
+                    "stunn",
+                    "shell",
+                    "smell",
+                    "swell",
+                    "begg"
+                ]
+            }
+        },
+        "ed /t/": {
+            "ed": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ask",
+                    "flash",
+                    "pack",
+                    "camp",
+                    "pick",
+                    "blink",
+                    "kick",
+                    "wink",
+                    "fish",
+                    "cross",
+                    "block",
+                    "brush",
+                    "crush",
+                    "pluck",
+                    "duck",
+                    "check",
+                    "sketch",
+                    "help"
+                ]
+            }
+        }
+    }
+}

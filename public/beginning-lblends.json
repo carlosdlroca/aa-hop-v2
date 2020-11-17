@@ -1,0 +1,81 @@
+{
+    "color": "orange",
+    "words": {
+        "fl": {
+            "fl": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ag",
+                    "ab",
+                    "at",
+                    "ap",
+                    "ip",
+                    "ick",
+                    "oss",
+                    "op",
+                    "ock",
+                    "uff",
+                    "ed"
+                ]
+            }
+        },
+        "gl": {
+            "gl": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ad",
+                    "ass",
+                    "oss"
+                ]
+            }
+        },
+        "cl": {
+            "cl": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ap",
+                    "am",
+                    "ass",
+                    "an",
+                    "iff",
+                    "ip",
+                    "ick",
+                    "og",
+                    "ot",
+                    "ock",
+                    "ub",
+                    "uck"
+                ]
+            }
+        },
+        "bl": {
+            "bl": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ack",
+                    "ob",
+                    "ot",
+                    "ock",
+                    "uff",
+                    "ed",
+                    "ess"
+                ]
+            }
+        },
+        "pl": {
+            "pl": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "an",
+                    "ot",
+                    "op",
+                    "od",
+                    "ug",
+                    "um",
+                    "us",
+                    "uck"
+                ]
+            }
+        }
+    }
+}

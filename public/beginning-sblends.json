@@ -1,0 +1,124 @@
+{
+    "color": "teal",
+    "words": {
+        "sm": {
+            "sm": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ack",
+                    "og",
+                    "ock",
+                    "ug",
+                    "ell"
+                ]
+            }
+        },
+        "sn": {
+            "sn": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ap",
+                    "ag",
+                    "ack",
+                    "ip",
+                    "iff",
+                    "ug",
+                    "ub",
+                    "uck"
+                ]
+            }
+        },
+        "sp": {
+            "sp": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "an",
+                    "in",
+                    "ill",
+                    "it",
+                    "ot",
+                    "un",
+                    "ed",
+                    "ell"
+                ]
+            }
+        },
+        "sl": {
+            "sl": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "am",
+                    "ab",
+                    "ap",
+                    "acks",
+                    "id",
+                    "im",
+                    "ip",
+                    "it",
+                    "ick",
+                    "ot",
+                    "ug",
+                    "ed"
+                ]
+            }
+        },
+        "sc": {
+            "sc": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "at",
+                    "ab",
+                    "an",
+                    "ott",
+                    "uff"
+                ]
+            }
+        },
+        "sk": {
+            "sk": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ip",
+                    "id",
+                    "ill",
+                    "im",
+                    "in",
+                    "it",
+                    "ull"
+                ]
+            }
+        },
+        "sw": {
+            "sw": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "am",
+                    "im",
+                    "iss",
+                    "um",
+                    "ell"
+                ]
+            }
+        },
+        "st": {
+            "st": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "aff",
+                    "ab",
+                    "ag",
+                    "ack",
+                    "iff",
+                    "ill",
+                    "ick",
+                    "op",
+                    "ock",
+                    "ub",
+                    "uff",
+                    "un",
+                    "uck"
+                ]
+            }
+        }
+    }
+}

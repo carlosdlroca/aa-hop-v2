@@ -1,0 +1,227 @@
+{
+    "color": "red",
+    "words": {
+        "ng": {
+            "ng": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ha",
+                    "ra",
+                    "ba",
+                    "sa",
+                    "cla",
+                    "thi",
+                    "swi",
+                    "sti",
+                    "fli",
+                    "bri",
+                    "si",
+                    "so",
+                    "lo",
+                    "ru",
+                    "lu",
+                    "hu",
+                    "su"
+                ]
+            }
+        },
+        "mp": {
+            "mp": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ca",
+                    "da",
+                    "la",
+                    "cha",
+                    "sta",
+                    "cla",
+                    "cra",
+                    "tra",
+                    "li",
+                    "ski",
+                    "bli",
+                    "lu",
+                    "pu",
+                    "bu",
+                    "du",
+                    "ju",
+                    "thu",
+                    "slu"
+                ]
+            }
+        },
+        "nd": {
+            "nd": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "a",
+                    "ba",
+                    "ha",
+                    "la",
+                    "sa",
+                    "sta",
+                    "bra",
+                    "bo",
+                    "fo",
+                    "po",
+                    "blo",
+                    "me",
+                    "se",
+                    "e",
+                    "be",
+                    "le",
+                    "spe",
+                    "ble"
+                ]
+            }
+        },
+        "nt": {
+            "nt": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "a",
+                    "pa",
+                    "sla",
+                    "pla",
+                    "hi",
+                    "mi",
+                    "pri",
+                    "hu",
+                    "pu",
+                    "stu",
+                    "blu",
+                    "gru",
+                    "be",
+                    "de",
+                    "re",
+                    "se",
+                    "te",
+                    "we"
+                ]
+            }
+        },
+        "nk": {
+            "nk": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "sa",
+                    "ta",
+                    "ba",
+                    "tha",
+                    "bla",
+                    "cra",
+                    "pi",
+                    "mi",
+                    "si",
+                    "wi",
+                    "thi",
+                    "dri",
+                    "du",
+                    "hu",
+                    "ju",
+                    "chu",
+                    "sku",
+                    "tru"
+                ]
+            }
+        },
+        "st": {
+            "st": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "fa",
+                    "la",
+                    "ma",
+                    "pa",
+                    "bla",
+                    "fi",
+                    "li",
+                    "lo",
+                    "du",
+                    "ru",
+                    "ju",
+                    "tru",
+                    "cru",
+                    "re",
+                    "we",
+                    "be",
+                    "ne",
+                    "che"
+                ]
+            }
+        },
+        "sp": {
+            "sp": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ga",
+                    "ra",
+                    "gra",
+                    "cla",
+                    "li",
+                    "wi"
+                ]
+            }
+        },
+        "sk": {
+            "sk": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ma",
+                    "a",
+                    "ta",
+                    "di",
+                    "ri",
+                    "whi",
+                    "du",
+                    "tu",
+                    "de"
+                ]
+            }
+        },
+        "ft": {
+            "ft": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ra",
+                    "sha",
+                    "cra",
+                    "gi",
+                    "li",
+                    "si",
+                    "shi",
+                    "swi",
+                    "dri",
+                    "lo",
+                    "so",
+                    "le"
+                ]
+            }
+        },
+        "lk": {
+            "lk": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "mi",
+                    "si",
+                    "bu",
+                    "hu",
+                    "su"
+                ]
+            }
+        },
+        "lt": {
+            "lt": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ti",
+                    "wi",
+                    "qui",
+                    "be",
+                    "fe",
+                    "me"
+                ]
+            }
+        }
+    }
+}

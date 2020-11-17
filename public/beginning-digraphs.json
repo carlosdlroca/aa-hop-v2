@@ -1,0 +1,83 @@
+{
+    "color": "orange",
+    "words": {
+        "ch": {
+            "ch": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ad",
+                    "ap",
+                    "at",
+                    "in",
+                    "ill",
+                    "ip",
+                    "ick",
+                    "op",
+                    "ug",
+                    "um",
+                    "uck",
+                    "ess",
+                    "eck"
+                ]
+            }
+        },
+        "th": {
+            "th": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "in",
+                    "ick",
+                    "ud",
+                    "ank",
+                    "at",
+                    "an",
+                    "is",
+                    "em",
+                    "en"
+                ]
+            }
+        },
+        "sh": {
+            "sh": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "all",
+                    "ag",
+                    "ack",
+                    "ip",
+                    "in",
+                    "op ",
+                    "ot",
+                    "ock",
+                    "ut",
+                    "ed",
+                    "ell"
+                ]
+            }
+        },
+        "wh": {
+            "wh": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ip",
+                    "iz",
+                    "iff",
+                    "im",
+                    "en"
+                ]
+            }
+        },
+        "qu": {
+            "qu": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ack",
+                    "iz",
+                    "it",
+                    "ill",
+                    "ick"
+                ]
+            }
+        }
+    }
+}
