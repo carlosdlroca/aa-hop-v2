@@ -28,12 +28,14 @@ export default function HOP({ file }) {
             />
             <WordDisplay chosenWord={state.chosenWord} color={file.color} />
             <button
-                className='text-2xl py-2 px-5 bg-gray-100 hover:bg-gray-200'
+                className={`block text-3xl py-3 px-8 mx-auto my-8 rounded-md bg-gray-100 hover:bg-gray-200 text-${file.color}-500`}
                 onClick={() => {
                     dispatch({ type: "CHOOSE_WORD" });
                 }}
             >
-                Click
+                {Object.keys(state.chosenWord).length < 1
+                    ? "Begin"
+                    : "Next Word"}
             </button>
         </div>
     );
