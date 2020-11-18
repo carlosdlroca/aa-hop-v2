@@ -7,7 +7,6 @@ export default function Course({ course, file }) {
         <div className='h-screen'>
             <Head>
                 <title>{course.split("-").join(" ")}</title>
-                <link rel='shortcut icon' type='image/png' href='/abc.png' />
             </Head>
             <Link href='/'>
                 <a
@@ -24,7 +23,7 @@ export default function Course({ course, file }) {
 
 export async function getStaticProps(ctx) {
     let { course } = ctx.params;
-    const file = await require(`../../public/${course}.json`);
+    const file = await require(`../../public/words/${course}.json`);
     return { props: { course, file } };
 }
 
