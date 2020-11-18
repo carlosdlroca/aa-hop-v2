@@ -1,0 +1,10 @@
+{
+    "name": "Adventures Ahead: Hooked On Phonics",
+    "short_name": "Phonics App",
+    "icons": [],
+    "theme_color": "#FF6666",
+    "background_color": "#66FF99",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+}
