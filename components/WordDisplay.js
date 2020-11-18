@@ -18,12 +18,12 @@ function ChosenWord({ chosenWord, color }) {
     if (chosenWord.partPosition == "start") {
         return (
             <>
-                <div className='wordCard mr-2'>
+                <div className='wordCard mr-2 text-wordCard-sm md:text-wordCard-lg'>
                     <div className={`start text-${color}-500`}>
                         {chosenWord.wordPart}
                     </div>
                 </div>
-                <div className='wordCard'>
+                <div className='wordCard text-wordCard-sm md:text-wordCard-lg'>
                     <div className='end'>{chosenWord.wordCap}</div>
                 </div>
             </>
@@ -31,10 +31,10 @@ function ChosenWord({ chosenWord, color }) {
     }
     return (
         <>
-            <div className='wordCard mr-2'>
+            <div className='wordCard mr-2 text-wordCard-sm md:text-wordCard-lg'>
                 <div className='start'>{chosenWord.wordCap}</div>
             </div>
-            <div className='wordCard'>
+            <div className='wordCard text-wordCard-sm md:text-wordCard-lg'>
                 <div className={`end text-${color}-500`}>
                     {chosenWord.wordPart}
                 </div>
@@ -44,5 +44,9 @@ function ChosenWord({ chosenWord, color }) {
 }
 
 function SingleChosenWord({ wordCap }) {
-    return <div className='wordCard single'>{wordCap}</div>;
+    return (
+        <div className='wordCard single text-wordCard-sm md:text-wordCard-lg'>
+            {wordCap}
+        </div>
+    );
 }
