@@ -67,9 +67,7 @@ background-size: cover;
   }
 
   .wordCard {
-    @apply grid items-center bg-gray-100 select-none p-5 h-64;
-    font-size: 6rem;
-    width:50%;
+    @apply grid items-center bg-gray-100 select-none p-5 h-64 w-2/4;
   }
   
   .wordCard.single {
