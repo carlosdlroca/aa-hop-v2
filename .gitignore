@@ -38,3 +38,5 @@ yarn-error.log*
 
 **/public/workbox-*.js.map
 **/public/sw.js.map
+
+**/public/icons/debug.log
