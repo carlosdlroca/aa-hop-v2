@@ -1,8 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-const APP_NAME = "Adventures Ahead Phonics App";
-const APP_DESCRIPTION = "Phoncis application for making learning fun";
-
 export default class extends Document {
     static async getInitialProps(ctx) {
         return await Document.getInitialProps(ctx);
@@ -12,25 +9,6 @@ export default class extends Document {
         return (
             <Html lang='en' dir='ltr'>
                 <Head>
-                    <meta name='application-name' content={APP_NAME} />
-                    <meta name='apple-mobile-web-app-capable' content='yes' />
-                    <meta
-                        name='apple-mobile-web-app-status-bar-style'
-                        content='default'
-                    />
-                    <meta
-                        name='apple-mobile-web-app-title'
-                        content={APP_NAME}
-                    />
-                    <meta name='description' content={APP_DESCRIPTION} />
-                    <meta name='format-detection' content='telephone=no' />
-                    <meta name='mobile-web-app-capable' content='yes' />
-                    <meta name='theme-color' content='#FFFFFF' />
-                    <meta
-                        name='viewport'
-                        content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover'
-                    />
-
                     <link rel='manifest' href='/manifest.json' />
                     <link
                         rel='icon'
@@ -59,8 +37,6 @@ export default class extends Document {
                         sizes='120x120'
                         href='/icons/apple-icon-120.jpg'
                     />
-
-                    <meta name='apple-mobile-web-app-capable' content='yes' />
 
                     <link
                         rel='apple-touch-startup-image'
