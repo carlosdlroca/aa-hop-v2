@@ -18,7 +18,7 @@
   html {
     @apply bg-gray-700;
   }
-  
+
   .cards {
     @apply grid grid-cols-1 gap-8 justify-items-center pb-12 gap-y-16;
     margin: 0 auto;
@@ -36,23 +36,23 @@
   }
 
   .card-orange {
-    @apply bg-orange-400;
+    @apply bg-gradient-to-tr from-orange-400 to-orange-600;
   }
 
   .card-red {
-    @apply bg-red-500;
+    @apply bg-gradient-to-tr from-red-500 to-red-700;
   }
 
   .card-green {
-    @apply bg-green-500;
+    @apply bg-gradient-to-tr from-green-400 to-green-600;
   }
 
   .card-blue {
-    @apply bg-blue-500;
+    @apply bg-gradient-to-tr from-blue-400 to-blue-600;
   }
 
   .card-purple {
-    @apply bg-purple-500;
+    @apply bg-gradient-to-tr from-purple-400 to-purple-700;
   }
 
   .wordCards {
