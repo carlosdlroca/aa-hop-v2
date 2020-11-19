@@ -3,12 +3,12 @@ import Head from "next/head";
 
 export default function IndexPage() {
     return (
-        <div className='text-white'>
+        <div>
             <Head>
                 <title>Adventures Ahead Phonics</title>
             </Head>
-            <div className='py-20'>
-                <h1 className='text-5xl text-center'>
+            <div className='pageTitle'>
+                <h1 className='bg-gray-100 '>
                     Adventures Ahead: Hooked on Phonics
                 </h1>
             </div>
