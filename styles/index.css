@@ -79,4 +79,12 @@
   .wordCard .end {
     @apply justify-self-start;
   }
+
+  .pageTitle {
+    @apply my-20 grid place-items-center;
+  }
+
+  .pageTitle h1 {
+    @apply px-5 text-5xl bg-gray-100 text-gray-800 text-center;
+  }
 }
