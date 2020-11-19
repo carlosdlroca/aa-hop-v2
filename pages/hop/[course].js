@@ -22,7 +22,7 @@ export default function Course({ course, file }) {
                     className={`block bg-arrow bg-contain bg-no-repeat bg-${file.color}-500 w-12 h-12 rounded-full`}
                 ></a>
             </Link>
-            <div className='pageTitle course'>
+            <div className='pageTitle course md:text-4xl'>
                 <h1 className={`bg-${file.color}-500`}>
                     {course.split("-").join(" ")}
                 </h1>

@@ -85,7 +85,7 @@
   }
 
   .pageTitle h1 {
-    @apply px-5 text-5xl text-gray-800 text-center rounded;
+    @apply px-5 text-2xl text-gray-800 text-center rounded;
   }
 
   .pageTitle.course {
