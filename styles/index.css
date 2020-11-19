@@ -85,6 +85,13 @@
   }
 
   .pageTitle h1 {
-    @apply px-5 text-5xl bg-gray-100 text-gray-800 text-center;
+    @apply px-5 text-5xl text-gray-800 text-center rounded;
+  }
+
+  .pageTitle.course {
+    @apply mt-5 mb-10;
+  }
+  .pageTitle.course h1 {
+    @apply capitalize text-gray-100 px-10;
   }
 }
