@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
                 <meta name='theme-color' content='#FFFFFF' />
                 <meta
                     name='viewport'
-                    content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover'
+                    content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover, user-scalable=no'
                 />
                 <meta name='apple-mobile-web-app-capable' content='yes' />
             </Head>
