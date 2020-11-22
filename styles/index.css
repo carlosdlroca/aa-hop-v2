@@ -29,7 +29,7 @@
   }
 
   .card {
-    @apply text-2xl font-bold font-sans grid place-items-center shadow text-gray-100 rounded;
+    @apply text-2xl text-center font-bold font-sans grid place-items-center shadow text-gray-100 rounded;
     height: 18rem;
     width: 18rem;
   }
