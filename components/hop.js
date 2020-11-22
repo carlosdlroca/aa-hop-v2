@@ -17,7 +17,7 @@ export default function HOP({ file, playAudio }) {
             <button
                 className={`block text-3xl py-3 px-8 mx-auto my-8 rounded-md bg-gray-100 hover:bg-gray-200 text-${file.color}-500`}
                 onClick={() => {
-                    if (Object.keys(state.chosenWord).length > 0) {
+                    if (state.activeButtons.length > 0) {
                         playAudio();
                     }
                     dispatch({ type: "CHOOSE_WORD" });
