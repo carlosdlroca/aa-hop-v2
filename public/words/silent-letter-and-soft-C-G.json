@@ -1,0 +1,92 @@
+{
+    "color": "blue",
+    "words": {
+        "kn /n/": {
+            "kn": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ee",
+                    "ow",
+                    "ock",
+                    "eel",
+                    "it",
+                    "elt",
+                    "ob",
+                    "ot",
+                    "ight",
+                    "ack",
+                    "own",
+                    "ife"
+                ]
+            }
+        },
+        "wr /r/": {
+            "w": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ap",
+                    "eck",
+                    "ing",
+                    "ist",
+                    "ite",
+                    "ong",
+                    "ote",
+                    "ench",
+                    "itten",
+                    "eath"
+                ]
+            }
+        },
+        "c /s/": {
+            "ce": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "mi",
+                    "pea",
+                    "fa",
+                    "i",
+                    "dan",
+                    "sli",
+                    "fen",
+                    "pri",
+                    "sin",
+                    "ri",
+                    "spi",
+                    "ra",
+                    "ni",
+                    "spa",
+                    "twi",
+                    "pla"
+                ]
+            },
+            "c": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ent",
+                    "inch"
+                ]
+            }
+        },
+        "g /j/": {
+            "ge": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "a",
+                    "sta",
+                    "ra",
+                    "wa",
+                    "pa",
+                    "sa",
+                    "ca"
+                ]
+            },
+            "g": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "em",
+                    "el"
+                ]
+            }
+        }
+    }
+}

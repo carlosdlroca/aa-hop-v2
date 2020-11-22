@@ -38,6 +38,24 @@ export default function IndexPage() {
                 <Link href='/hop/suffixes'>
                     <a className='card card-red'>Suffixes</a>
                 </Link>
+                <Link href='/hop/silent-e'>
+                    <a className='card card-green'>Silent E</a>
+                </Link>
+                <Link href='/hop/vowel-digraphs'>
+                    <a className='card card-green'>Vowel Digraphs</a>
+                </Link>
+                <Link href='/hop/r-controlled-vowels'>
+                    <a className='card card-green'>R-controlled Vowels</a>
+                </Link>
+                <Link href='/hop/digraphs-and-dipthongs'>
+                    <a className='card card-blue'>Digraphs & Dipthongs</a>
+                </Link>
+                <Link href='/hop/3-letter-beginning-blends'>
+                    <a className='card card-blue'>3 Letter Beginning Blends</a>
+                </Link>
+                <Link href='/hop/silent-letter-and-soft-C-G'>
+                    <a className='card card-blue'>Silent Letter and Soft C/G</a>
+                </Link>
             </section>
         </div>
     );

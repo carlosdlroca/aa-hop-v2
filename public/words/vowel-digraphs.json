@@ -1,0 +1,213 @@
+{
+    "color": "green",
+    "words": {
+        "ee": {
+            "ee": {
+                "single": true,
+                "wordCaps": [
+                    "meet",
+                    "keep",
+                    "sleep",
+                    "feet",
+                    "green",
+                    "bleed",
+                    "sheep",
+                    "tree",
+                    "bee",
+                    "cheek",
+                    "free",
+                    "teeth",
+                    "wheel",
+                    "queen",
+                    "creek",
+                    "eel",
+                    "sweet",
+                    "need"
+                ]
+            }
+        },
+        "ea": {
+            "ea": {
+                "single": true,
+                "wordCaps": [
+                    "meat",
+                    "beach",
+                    "beak",
+                    "creak",
+                    "pea",
+                    "read",
+                    "leaf",
+                    "teach",
+                    "beast",
+                    "peach",
+                    "real",
+                    "flea",
+                    "reach",
+                    "dream",
+                    "speak",
+                    "seal",
+                    "each",
+                    "team"
+                ]
+            }
+        },
+        "ow": {
+            "ow": {
+                "single": true,
+                "wordCaps": [
+                    "snow",
+                    "row",
+                    "own",
+                    "bow",
+                    "mow",
+                    "flow",
+                    "bowl",
+                    "tow",
+                    "crow",
+                    "glow",
+                    "show",
+                    "grow",
+                    "stow",
+                    "blow",
+                    "low",
+                    "slow"
+                ]
+            }
+        },
+        "oa": {
+            "oa": {
+                "single": true,
+                "wordCaps": [
+                    "coach",
+                    "toad",
+                    "coat",
+                    "cloak",
+                    "poach",
+                    "coal",
+                    "goat",
+                    "goal",
+                    "oat",
+                    "loaf",
+                    "load",
+                    "foam",
+                    "oak",
+                    "float",
+                    "soap",
+                    "road",
+                    "roam",
+                    "boat"
+                ]
+            }
+        },
+        "ai": {
+            "ai": {
+                "single": true,
+                "wordCaps": [
+                    "rain",
+                    "paid",
+                    "hail",
+                    "rail",
+                    "snail",
+                    "raid",
+                    "grain",
+                    "sail",
+                    "trail",
+                    "chain",
+                    "train",
+                    "mail",
+                    "tail",
+                    "brain",
+                    "pail",
+                    "paint",
+                    "braid",
+                    "nail"
+                ]
+            }
+        },
+        "ay": {
+            "ay": {
+                "single": true,
+                "wordCaps": [
+                    "bay",
+                    "lay",
+                    "way",
+                    "gray",
+                    "sway",
+                    "day",
+                    "may",
+                    "clay",
+                    "tray",
+                    "pay",
+                    "hay",
+                    "play",
+                    "ray",
+                    "jay",
+                    "say",
+                    "stay",
+                    "Sunday"
+                ]
+            }
+        },
+        "y /i/": {
+            "y": {
+                "single": true,
+                "wordCaps": [
+                    "cry",
+                    "my",
+                    "pry",
+                    "shy",
+                    "by",
+                    "sky",
+                    "dry",
+                    "spy",
+                    "fly",
+                    "try",
+                    "fry",
+                    "why"
+                ]
+            }
+        },
+        "y /e/": {
+            "y": {
+                "single": true,
+                "wordCaps": [
+                    "puppy",
+                    "rocky",
+                    "sunny",
+                    "tricky",
+                    "shady",
+                    "windy",
+                    "fuzzy",
+                    "dizzy",
+                    "happy",
+                    "lucky",
+                    "empty",
+                    "hungry",
+                    "skinny",
+                    "safety",
+                    "sticky",
+                    "funny",
+                    "baby",
+                    "candy"
+                ]
+            }
+        },
+        "all": {
+            "a": {
+                "single": true,
+                "wordCaps": [
+                    "ball",
+                    "mall",
+                    "call",
+                    "all",
+                    "fall",
+                    "tall",
+                    "wall",
+                    "small",
+                    "hall",
+                    "stall"
+                ]
+            }
+        }
+    }
+}

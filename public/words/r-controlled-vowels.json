@@ -1,0 +1,170 @@
+{
+    "color": "green",
+    "words": {
+        "r": {
+            "ar": {
+                "single": true,
+                "wordCaps": [
+                    "car",
+                    "park",
+                    "sharp",
+                    "cart",
+                    "bark",
+                    "smart",
+                    "shark",
+                    "star",
+                    "arm",
+                    "farm",
+                    "start",
+                    "chart",
+                    "dark",
+                    "art",
+                    "jar",
+                    "barn",
+                    "charm",
+                    "yard"
+                ]
+            },
+            "er": {
+                "single": true,
+                "wordCaps": [
+                    "her",
+                    "fern",
+                    "nerve",
+                    "herd",
+                    "jerk",
+                    "perch",
+                    "serve",
+                    "stern",
+                    "term",
+                    "swerve"
+                ]
+            },
+            "ir": {
+                "single": true,
+                "wordCaps": [
+                    "bird",
+                    "dirt",
+                    "swirl",
+                    "fir",
+                    "flirt",
+                    "thirst",
+                    "sir",
+                    "shirt",
+                    "birch",
+                    "twirl",
+                    "chirp",
+                    "skirt",
+                    "first",
+                    "whirl",
+                    "firm",
+                    "stir",
+                    "girl",
+                    "third"
+                ]
+            },
+            "ur": {
+                "single": true,
+                "wordCaps": [
+                    "surf",
+                    "turn",
+                    "hurt",
+                    "church",
+                    "fur",
+                    "burn",
+                    "curve",
+                    "nurse",
+                    "curb",
+                    "purse"
+                ]
+            },
+            "or": {
+                "single": true,
+                "wordCaps": [
+                    "horn",
+                    "fork",
+                    "north",
+                    "corn",
+                    "torch",
+                    "cork",
+                    "or",
+                    "fork",
+                    "storm",
+                    "torn",
+                    "short",
+                    "porch",
+                    "cord",
+                    "fort",
+                    "stork",
+                    "sport",
+                    "born",
+                    "thorn"
+                ]
+            },
+            "ore": {
+                "single": true,
+                "wordCaps": [
+                    "more",
+                    "wore",
+                    "snore",
+                    "core",
+                    "shore",
+                    "bore",
+                    "score",
+                    "store"
+                ]
+            },
+            "eer": {
+                "single": true,
+                "wordCaps": [
+                    "deer",
+                    "cheer",
+                    "steer"
+                ]
+            },
+            "ear": {
+                "single": true,
+                "wordCaps": [
+                    "dear",
+                    "ear",
+                    "fear",
+                    "gear",
+                    "hear",
+                    "clear",
+                    "near",
+                    "rear",
+                    "spear",
+                    "tear",
+                    "year"
+                ]
+            },
+            "are": {
+                "single": true,
+                "wordCaps": [
+                    "care",
+                    "rare",
+                    "flare",
+                    "bare",
+                    "glare",
+                    "dare",
+                    "scare",
+                    "fare",
+                    "share",
+                    "spare",
+                    "stare"
+                ]
+            },
+            "air": {
+                "single": true,
+                "wordCaps": [
+                    "pair",
+                    "air",
+                    "fair",
+                    "hair",
+                    "chair",
+                    "stairs"
+                ]
+            }
+        }
+    }
+}

@@ -53,6 +53,12 @@ export async function getStaticPaths() {
             { params: { course: "ending-digraphs" } },
             { params: { course: "ending-blends" } },
             { params: { course: "suffixes" } },
+            { params: { course: "silent-e" } },
+            { params: { course: "vowel-digraphs" } },
+            { params: { course: "r-controlled-vowels" } },
+            { params: { course: "digraphs-and-dipthongs" } },
+            { params: { course: "3-letter-beginning-blends" } },
+            { params: { course: "silent-letter-and-soft-C-G" } },
         ],
         fallback: false,
     };

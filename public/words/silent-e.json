@@ -1,180 +1,182 @@
 {
     "color": "green",
-    "a-e": {
+    "words": {
         "a-e": {
-            "single": true,
-            "wordCaps": [
-                "cane",
-                "gave",
-                "tape",
-                "came",
-                "plane",
-                "rake",
-                "same",
-                "flame",
-                "ate",
-                "grape",
-                "fade",
-                "state",
-                "made",
-                "wave",
-                "daze",
-                "gate",
-                "lake",
-                "skate",
-                "shade",
-                "take",
-                "shake",
-                "bake",
-                "name",
-                "trade",
-                "date",
-                "frame",
-                "cave",
-                "chase",
-                "haze",
-                "plate",
-                "make",
-                "brave",
-                "blame",
-                "game",
-                "shape",
-                "save",
-                "brake",
-                "cake",
-                "ape",
-                "whale"
-            ]
-        }
-    },
-    "i-e": {
+            "a-e": {
+                "single": true,
+                "wordCaps": [
+                    "cane",
+                    "gave",
+                    "tape",
+                    "came",
+                    "plane",
+                    "rake",
+                    "same",
+                    "flame",
+                    "ate",
+                    "grape",
+                    "fade",
+                    "state",
+                    "made",
+                    "wave",
+                    "daze",
+                    "gate",
+                    "lake",
+                    "skate",
+                    "shade",
+                    "take",
+                    "shake",
+                    "bake",
+                    "name",
+                    "trade",
+                    "date",
+                    "frame",
+                    "cave",
+                    "chase",
+                    "haze",
+                    "plate",
+                    "make",
+                    "brave",
+                    "blame",
+                    "game",
+                    "shape",
+                    "save",
+                    "brake",
+                    "cake",
+                    "ape",
+                    "whale"
+                ]
+            }
+        },
         "i-e": {
-            "single": true,
-            "wordCaps": [
-                "bite",
-                "life",
-                "ride",
-                "Mike",
-                "dime",
-                "spine",
-                "grime",
-                "side",
-                "slide",
-                "lime",
-                "time",
-                "smile",
-                "quite",
-                "tide",
-                "shine",
-                "bike",
-                "slime",
-                "tribe",
-                "kite",
-                "nine",
-                "hide",
-                "while",
-                "pine",
-                "mile",
-                "twine",
-                "hike",
-                "fine",
-                "pile",
-                "dine",
-                "mine",
-                "vine",
-                "five",
-                "prize",
-                "chime",
-                "pipe",
-                "drive",
-                "pride",
-                "wide",
-                "white",
-                "like"
-            ]
-        }
-    },
-    "o-e": {
+            "i-e": {
+                "single": true,
+                "wordCaps": [
+                    "bite",
+                    "life",
+                    "ride",
+                    "Mike",
+                    "dime",
+                    "spine",
+                    "grime",
+                    "side",
+                    "slide",
+                    "lime",
+                    "time",
+                    "smile",
+                    "quite",
+                    "tide",
+                    "shine",
+                    "bike",
+                    "slime",
+                    "tribe",
+                    "kite",
+                    "nine",
+                    "hide",
+                    "while",
+                    "pine",
+                    "mile",
+                    "twine",
+                    "hike",
+                    "fine",
+                    "pile",
+                    "dine",
+                    "mine",
+                    "vine",
+                    "five",
+                    "prize",
+                    "chime",
+                    "pipe",
+                    "drive",
+                    "pride",
+                    "wide",
+                    "white",
+                    "like"
+                ]
+            }
+        },
         "o-e": {
-            "single": true,
-            "wordCaps": [
-                "hope",
-                "doze",
-                "code",
-                "clone",
-                "note",
-                "broke",
-                "rode",
-                "cove",
-                "cope",
-                "bone",
-                "slope",
-                "choke",
-                "stole",
-                "scope",
-                "drove",
-                "froze",
-                "tone",
-                "joke",
-                "shone",
-                "pole",
-                "grove",
-                "stove",
-                "lone",
-                "dove",
-                "quote",
-                "smoke",
-                "Rome",
-                "cone",
-                "stone",
-                "globe",
-                "wove",
-                "poke",
-                "zone",
-                "rope",
-                "hole",
-                "home",
-                "vote"
-            ]
-        }
-    },
-    "u-e /yoo/": {
-        "ue": {
-            "single": true,
-            "wordCaps": [
-                "cute",
-                "cube",
-                "mule",
-                "use",
-                "muse",
-                "mute",
-                "fuse"
-            ]
-        }
-    },
-    "u-e /oo/": {
-        "ue": {
-            "single": true,
-            "wordCaps": [
-                "tube",
-                "tune",
-                "rude",
-                "flute",
-                "June",
-                "dune"
-            ]
-        }
-    },
-    "e-e": {
-        "ee": {
-            "single": "true",
-            "wordCaps": [
-                "Pete",
-                "Eve",
-                "Steve",
-                "these",
-                "theme"
-            ]
+            "o-e": {
+                "single": true,
+                "wordCaps": [
+                    "hope",
+                    "doze",
+                    "code",
+                    "clone",
+                    "note",
+                    "broke",
+                    "rode",
+                    "cove",
+                    "cope",
+                    "bone",
+                    "slope",
+                    "choke",
+                    "stole",
+                    "scope",
+                    "drove",
+                    "froze",
+                    "tone",
+                    "joke",
+                    "shone",
+                    "pole",
+                    "grove",
+                    "stove",
+                    "lone",
+                    "dove",
+                    "quote",
+                    "smoke",
+                    "Rome",
+                    "cone",
+                    "stone",
+                    "globe",
+                    "wove",
+                    "poke",
+                    "zone",
+                    "rope",
+                    "hole",
+                    "home",
+                    "vote"
+                ]
+            }
+        },
+        "u-e /yoo/": {
+            "ue": {
+                "single": true,
+                "wordCaps": [
+                    "cute",
+                    "cube",
+                    "mule",
+                    "use",
+                    "muse",
+                    "mute",
+                    "fuse"
+                ]
+            }
+        },
+        "u-e /oo/": {
+            "ue": {
+                "single": true,
+                "wordCaps": [
+                    "tube",
+                    "tune",
+                    "rude",
+                    "flute",
+                    "June",
+                    "dune"
+                ]
+            }
+        },
+        "e-e": {
+            "ee": {
+                "single": "true",
+                "wordCaps": [
+                    "Pete",
+                    "Eve",
+                    "Steve",
+                    "these",
+                    "theme"
+                ]
+            }
         }
     }
 }

@@ -1,0 +1,101 @@
+{
+    "color": "blue",
+    "words": {
+        "shr": {
+            "shr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "imp",
+                    "ed",
+                    "ink",
+                    "ub",
+                    "ug",
+                    "unk",
+                    "ank",
+                    "ill"
+                ]
+            }
+        },
+        "str": {
+            "str": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ap",
+                    "ip",
+                    "eak",
+                    "oke",
+                    "and",
+                    "ong",
+                    "eam",
+                    "ung",
+                    "eet",
+                    "um",
+                    "ict",
+                    "ain",
+                    "ike",
+                    "ing",
+                    "ipe",
+                    "ess",
+                    "aw"
+                ]
+            }
+        },
+        "scr": {
+            "scr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "am",
+                    "ap",
+                    "atch",
+                    "ub",
+                    "ape",
+                    "eam"
+                ]
+            }
+        },
+        "spr": {
+            "spr": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ing",
+                    "awl",
+                    "uce",
+                    "int",
+                    "ain",
+                    "ung",
+                    "ay",
+                    "out",
+                    "ang"
+                ]
+            }
+        },
+        "spl": {
+            "spl": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "ash",
+                    "at",
+                    "int",
+                    "it"
+                ]
+            }
+        },
+        "squ": {
+            "squ": {
+                "partPosition": "start",
+                "wordCaps": [
+                    "eak",
+                    "are",
+                    "int",
+                    "irt",
+                    "awk",
+                    "ish",
+                    "irm",
+                    "eal",
+                    "id",
+                    "eeze"
+                ]
+            }
+        }
+    }
+}
