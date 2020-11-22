@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 module.exports = {
     future: {
         removeDeprecatedGapUtilities: true,
@@ -10,6 +11,10 @@ module.exports = {
             fontSize: {
                 "wordCard-lg": "6rem",
                 "wordCard-sm": "3rem",
+            },
+            colors: {
+                amber: colors.amber,
+                orange: colors.orange,
             },
         },
     },
