@@ -1,7 +1,7 @@
 {
     "color": "green",
     "words": {
-        "r": {
+        "ar": {
             "ar": {
                 "single": true,
                 "wordCaps": [
@@ -24,7 +24,9 @@
                     "charm",
                     "yard"
                 ]
-            },
+            }
+        },
+        "er": {
             "er": {
                 "single": true,
                 "wordCaps": [
@@ -39,7 +41,9 @@
                     "term",
                     "swerve"
                 ]
-            },
+            }
+        },
+        "ir": {
             "ir": {
                 "single": true,
                 "wordCaps": [
@@ -62,7 +66,9 @@
                     "girl",
                     "third"
                 ]
-            },
+            }
+        },
+        "ur": {
             "ur": {
                 "single": true,
                 "wordCaps": [
@@ -77,7 +83,9 @@
                     "curb",
                     "purse"
                 ]
-            },
+            }
+        },
+        "or": {
             "or": {
                 "single": true,
                 "wordCaps": [
@@ -100,7 +108,9 @@
                     "born",
                     "thorn"
                 ]
-            },
+            }
+        },
+        "ore": {
             "ore": {
                 "single": true,
                 "wordCaps": [
@@ -113,7 +123,9 @@
                     "score",
                     "store"
                 ]
-            },
+            }
+        },
+        "eer": {
             "eer": {
                 "single": true,
                 "wordCaps": [
@@ -121,7 +133,9 @@
                     "cheer",
                     "steer"
                 ]
-            },
+            }
+        },
+        "ear": {
             "ear": {
                 "single": true,
                 "wordCaps": [
@@ -137,7 +151,9 @@
                     "tear",
                     "year"
                 ]
-            },
+            }
+        },
+        "are": {
             "are": {
                 "single": true,
                 "wordCaps": [
@@ -153,7 +169,9 @@
                     "spare",
                     "stare"
                 ]
-            },
+            }
+        },
+        "air": {
             "air": {
                 "single": true,
                 "wordCaps": [
