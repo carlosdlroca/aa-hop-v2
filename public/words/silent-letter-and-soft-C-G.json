@@ -21,7 +21,7 @@
             }
         },
         "wr /r/": {
-            "w": {
+            "wr": {
                 "partPosition": "start",
                 "wordCaps": [
                     "ap",
