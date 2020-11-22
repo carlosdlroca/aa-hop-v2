@@ -62,9 +62,15 @@ export function reducer(file) {
                         activeButtons: state.activeButtons.filter(
                             (b) => b !== removeActiveFocus
                         ),
+                        count: state.count + 1,
                     };
                 }
-                return { ...state, chosenWord: newChosenWord, words: newWords };
+                return {
+                    ...state,
+                    chosenWord: newChosenWord,
+                    words: newWords,
+                    count: state.count + 1,
+                };
             default:
                 return state;
         }
