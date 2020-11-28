@@ -7,7 +7,7 @@ export default function IndexPage() {
             <Head>
                 <title>Adventures Ahead Phonics</title>
             </Head>
-            <div className='pageTitle md:text-4xl'>
+            <div className='pageTitle'>
                 <h1 className='bg-gray-100 '>
                     Adventures Ahead: Hooked on Phonics
                 </h1>
