@@ -9,7 +9,7 @@ export default function HOP({ file, playAudio }) {
         <div className='pb-24 relative'>
             <div className='options absolute bottom-8 right-20'>
                 <button
-                    className='bg-amber-300 hover:bg-amber-400 text-white text-2xl px-5 py-2'
+                    className='bg-yellow-300 hover:bg-yellow-400 text-white text-2xl px-5 py-2'
                     onClick={() => {
                         dispatch({ type: "RESET_STATE" });
                     }}
