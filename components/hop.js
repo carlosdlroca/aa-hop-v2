@@ -26,7 +26,7 @@ export default function HOP({ file, playAudio }) {
             <WordDisplay chosenWord={state.chosenWord} color={file.color} />
             <section className='counter grid place-items-center'>
                 <span className='text-2xl'>Word Counter</span>
-                <h2 className='text-gray-600 inline-block text-6xl'>
+                <h2 className='text-gray-100 inline-block text-6xl'>
                     {state.count}{" "}
                 </h2>
             </section>
