@@ -13,7 +13,7 @@ export default function IndexPage() {
                 </h1>
             </div>
 
-            <section className='cards md:grid-cols-2 lg:grid-cols-3'>
+            <section className='cards'>
                 <Link href='/hop/vowels'>
                     <a className='card card-purple'>Vowels</a>
                 </Link>
