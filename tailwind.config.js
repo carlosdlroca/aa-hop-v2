@@ -13,7 +13,6 @@ module.exports = {
                 "wordCard-sm": "3rem",
             },
             colors: {
-                amber: colors.amber,
                 orange: colors.orange,
             },
         },
