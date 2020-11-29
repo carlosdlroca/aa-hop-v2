@@ -26,9 +26,21 @@
   }
 
   .card {
-    @apply text-2xl text-center font-bold font-sans grid place-items-center shadow text-gray-100 rounded md:grid-cols-2 lg:grid-cols-3;
+    @apply text-2xl text-center font-bold font-sans grid place-items-center shadow text-gray-100 rounded;
     height: 18rem;
     width: 18rem;
+  }
+
+  @screen md {
+    .cards {
+      @apply grid-cols-2
+    }
+  }
+
+  @screen lg {
+    .cards {
+      @apply grid-cols-3
+    }
   }
 
   .card:hover {
@@ -55,16 +67,82 @@
     @apply bg-gradient-to-tr from-purple-400 to-purple-700;
   }
 
+  /* Buttons  */
+
+  .buttons {
+    @apply flex flex-wrap items-center justify-evenly max-w-6xl mx-auto;
+  }
+
+  .word-select {
+    @apply bg-gray-100 text-3xl py-2 px-12 rounded-2xl mb-5 grid place-items-center border-2;
+  }
+
+  @screen md {
+    .word-select {
+      @apply px-16 text-4xl;
+    }
+  }
+
+  .word-select.active {
+    @apply text-gray-100;
+  }
+
+  .word-select-red {
+    @apply border-red-400 text-red-500 hover:bg-red-200; 
+  }
+  .word-select-blue {
+    @apply border-blue-400 text-blue-500 hover:bg-blue-200;
+  }
+  .word-select-green {
+    @apply border-green-400 text-green-500 hover:bg-green-200;
+  }
+  .word-select-orange {
+    @apply border-orange-400 text-orange-500 hover:bg-orange-200;
+  }
+  .word-select-purple {
+    @apply border-purple-400 text-purple-500 hover:bg-purple-200;
+  }
+
+  .word-select-red.active {
+    @apply bg-red-500 hover:bg-red-400;
+  }
+
+  .word-select-blue.active {
+    @apply bg-blue-500 hover:bg-blue-400;
+  }
+
+  .word-select-green.active {
+    @apply bg-green-500 hover:bg-green-400;
+  }
+
+  .word-select-orange.active {
+    @apply bg-orange-500 hover:bg-orange-400;
+  }
+
+  .word-select-purple.active {
+    @apply bg-purple-500 hover:bg-purple-400;
+  }
+
+  /* Word Cards */
+
   .wordCards {
     @apply flex mx-auto my-4 justify-center;
     width: min(52rem, 98vw);
   }
 
-  .buttons {
+  
+  .wordCard {
+    @apply grid items-center bg-gray-100 text-wordCard-sm select-none p-5 h-64 w-2/4;
   }
 
-  .wordCard {
-    @apply grid items-center bg-gray-100 select-none p-5 h-64 w-2/4;
+  @screen md {
+    .wordCards {
+      @apply p-10;
+    }
+
+    .wordCard {
+      @apply text-wordCard-lg;
+    }
   }
   
   .wordCard.single {
@@ -80,8 +158,26 @@
     @apply justify-self-start;
   }
 
+.wordCard-red {
+  @apply text-red-500
+}
+.wordCard-blue {
+  @apply text-blue-500
+}
+.wordCard-green {
+  @apply text-green-500
+}
+.wordCard-orange {
+  @apply text-orange-500
+}
+.wordCard-purple {
+  @apply text-purple-500
+}
+
+  /* Page Titles */
+
   .pageTitle {
-    @apply my-20 grid place-items-center md:text-4xl;
+    @apply my-20 grid place-items-center text-red-400;
   }
 
   .pageTitle h1 {
