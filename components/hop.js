@@ -31,7 +31,9 @@ export default function HOP({ file, playAudio }) {
                 </h2>
             </section>
             <button
-                className={`chooseNewWordButton ${printClassWithColor(color)}`}
+                className={`chooseNewWordButton ${printClassWithColor(
+                    file.color
+                )}`}
                 onClick={() => {
                     if (state.activeButtons.length > 0) {
                         playAudio();
