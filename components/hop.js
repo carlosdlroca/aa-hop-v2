@@ -31,7 +31,7 @@ export default function HOP({ file, playAudio }) {
                 </h2>
             </section>
             <button
-                className={`chooseNewWordButton-${file.color}`}
+                className={`chooseNewWordButton ${printClassWithColor(color)}`}
                 onClick={() => {
                     if (state.activeButtons.length > 0) {
                         playAudio();
@@ -45,4 +45,19 @@ export default function HOP({ file, playAudio }) {
             </button>
         </div>
     );
+}
+
+function printClassWithColor(color) {
+    switch (color) {
+        case "red":
+            return "chooseNewWordButton-red";
+        case "blue":
+            return "chooseNewWordButton-blue";
+        case "green":
+            return "chooseNewWordButton-green";
+        case "orange":
+            return "chooseNewWordButton-orange";
+        case "purple":
+            return "chooseNewWordButton-purple";
+    }
 }
