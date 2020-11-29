@@ -19,7 +19,7 @@ function ChosenWord({ chosenWord, color }) {
         return (
             <>
                 <div className='wordCard mr-2'>
-                    <div className={`start wordCard-${color}`}>
+                    <div className={`start ${printClassWithColor(color)}`}>
                         {chosenWord.wordPart}
                     </div>
                 </div>
@@ -35,7 +35,7 @@ function ChosenWord({ chosenWord, color }) {
                 <div className='start'>{chosenWord.wordCap}</div>
             </div>
             <div className='wordCard'>
-                <div className={`end wordCard-${color}`}>
+                <div className={`end ${printClassWithColor(color)}`}>
                     {chosenWord.wordPart}
                 </div>
             </div>
@@ -44,9 +44,20 @@ function ChosenWord({ chosenWord, color }) {
 }
 
 function SingleChosenWord({ wordCap }) {
-    return (
-        <div className='wordCard single text-wordCard-sm md:text-wordCard-lg'>
-            {wordCap}
-        </div>
-    );
+    return <div className='wordCard single'>{wordCap}</div>;
+}
+
+function printClassWithColor(color) {
+    switch (color) {
+        case "red":
+            return "wordCard-red";
+        case "blue":
+            return "wordCard-blue";
+        case "green":
+            return "wordCard-green";
+        case "orange":
+            return "wordCard-orange";
+        case "purple":
+            return "wordCard-purple";
+    }
 }

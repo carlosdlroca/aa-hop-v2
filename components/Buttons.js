@@ -3,7 +3,7 @@ export default function Buttons({ keys, dispatch, activeButtons, color }) {
         <section className='buttons'>
             {keys.map((key) => (
                 <button
-                    className={`word-select word-select-${color} ${
+                    className={`word-select ${printClassWithColor(color)} ${
                         activeButtons.includes(key) ? "active" : ""
                     }`}
                     key={key}
@@ -15,4 +15,19 @@ export default function Buttons({ keys, dispatch, activeButtons, color }) {
             ))}
         </section>
     );
+}
+
+function printClassWithColor(color) {
+    switch (color) {
+        case "red":
+            return "word-select-red";
+        case "blue":
+            return "word-select-blue";
+        case "green":
+            return "word-select-green";
+        case "orange":
+            return "word-select-orange";
+        case "purple":
+            return "word-select-purple";
+    }
 }
