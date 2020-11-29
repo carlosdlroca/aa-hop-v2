@@ -88,19 +88,19 @@
   }
 
   .word-select-red {
-    @apply border-red-400 text-red-500 hover:bg-red-200; 
+    @apply border-red-600 text-red-500 hover:bg-red-200; 
   }
   .word-select-blue {
-    @apply border-blue-400 text-blue-500 hover:bg-blue-200;
+    @apply border-blue-600 text-blue-500 hover:bg-blue-200;
   }
   .word-select-green {
-    @apply border-green-400 text-green-500 hover:bg-green-200;
+    @apply border-green-600 text-green-500 hover:bg-green-200;
   }
   .word-select-orange {
-    @apply border-orange-400 text-orange-500 hover:bg-orange-200;
+    @apply border-orange-600 text-orange-500 hover:bg-orange-200;
   }
   .word-select-purple {
-    @apply border-purple-400 text-purple-500 hover:bg-purple-200;
+    @apply border-purple-600 text-purple-500 hover:bg-purple-200;
   }
 
   .word-select-red.active {
