@@ -1,13 +1,11 @@
 export default function Buttons({ keys, dispatch, activeButtons, color }) {
     return (
-        <section className='buttons flex flex-wrap items-center justify-evenly max-w-6xl mx-auto'>
+        <section className='buttons'>
             {keys.map((key) => (
                 <button
-                    className={`${
-                        activeButtons.includes(key)
-                            ? `bg-${color}-500 hover:bg-${color}-400 text-gray-100`
-                            : `bg-gray-100 text-${color}-500 hover:bg-${color}-200`
-                    } text-gray-100 text-3xl md:text-4xl py-2 px-12 md:px-16 rounded-2xl mb-5 grid place-items-center border-2 border-${color}-500`}
+                    className={`word-select word-select-${color} ${
+                        activeButtons.includes(key) ? "active" : ""
+                    }`}
                     key={key}
                     aria-label={`Letter ${key}`}
                     onClick={() => dispatch({ type: "TOGGLE_BUTTON", key })}
