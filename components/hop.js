@@ -25,13 +25,13 @@ export default function HOP({ file, playAudio }) {
             />
             <WordDisplay chosenWord={state.chosenWord} color={file.color} />
             <section className='counter grid place-items-center'>
-                <span className='text-2xl'>Word Counter</span>
+                <span className='text-gray-200 text-2xl'>Word Counter</span>
                 <h2 className='text-gray-100 inline-block text-6xl'>
                     {state.count}{" "}
                 </h2>
             </section>
             <button
-                className={`block text-3xl py-3 px-8 mx-auto my-8 rounded-md bg-gray-100 hover:bg-gray-200 text-${file.color}-500`}
+                className={`chooseNewWordButton-${color}`}
                 onClick={() => {
                     if (state.activeButtons.length > 0) {
                         playAudio();
