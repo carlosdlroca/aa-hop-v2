@@ -18,14 +18,10 @@ export default function Course({ course, file }) {
                 <title>{course.split("-").join(" ")}</title>
             </Head>
             <Link href='/'>
-                <a
-                    className={`block bg-arrow bg-contain bg-no-repeat bg-${file.color}-500 w-12 h-12 rounded-full`}
-                ></a>
+                <a className='block bg-arrow bg-contain bg-no-repeat bg-blue-500 w-12 h-12 rounded-full'></a>
             </Link>
             <div className='pageTitle course'>
-                <h1 className={`bg-${file.color}-500`}>
-                    {course.split("-").join(" ")}
-                </h1>
+                <h1>{course.split("-").join(" ")}</h1>
             </div>
             <HOP file={file} playAudio={playAudio} />
             <audio ref={audioRef} src='/new-word.mp3'>
