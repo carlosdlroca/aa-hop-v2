@@ -1,6 +1,6 @@
 export default function WordDisplay({ chosenWord, color }) {
     return (
-        <div className='wordCards md:p-10 '>
+        <div className='wordCards'>
             {(function () {
                 if (Object.keys(chosenWord).length < 1) {
                     return <SingleChosenWord wordCap='Begin' />;
@@ -18,12 +18,12 @@ function ChosenWord({ chosenWord, color }) {
     if (chosenWord.partPosition == "start") {
         return (
             <>
-                <div className='wordCard mr-2 text-wordCard-sm md:text-wordCard-lg'>
-                    <div className={`start text-${color}-500`}>
+                <div className='wordCard mr-2'>
+                    <div className={`start wordCard-${color}`}>
                         {chosenWord.wordPart}
                     </div>
                 </div>
-                <div className='wordCard text-wordCard-sm md:text-wordCard-lg'>
+                <div className='wordCard'>
                     <div className='end'>{chosenWord.wordCap}</div>
                 </div>
             </>
@@ -31,11 +31,11 @@ function ChosenWord({ chosenWord, color }) {
     }
     return (
         <>
-            <div className='wordCard mr-2 text-wordCard-sm md:text-wordCard-lg'>
+            <div className='wordCard mr-2'>
                 <div className='start'>{chosenWord.wordCap}</div>
             </div>
-            <div className='wordCard text-wordCard-sm md:text-wordCard-lg'>
-                <div className={`end text-${color}-500`}>
+            <div className='wordCard'>
+                <div className={`end wordCard-${color}`}>
                     {chosenWord.wordPart}
                 </div>
             </div>
