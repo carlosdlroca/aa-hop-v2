@@ -24,12 +24,6 @@ export default function HOP({ file, playAudio }) {
                 activeButtons={state.activeButtons}
             />
             <WordDisplay chosenWord={state.chosenWord} color={file.color} />
-            <section className='counter grid place-items-center'>
-                <span className='text-gray-200 text-2xl'>Word Counter</span>
-                <h2 className='text-gray-100 inline-block text-6xl'>
-                    {state.count}{" "}
-                </h2>
-            </section>
             <button
                 className={`chooseNewWordButton ${printClassWithColor(
                     file.color
@@ -45,6 +39,12 @@ export default function HOP({ file, playAudio }) {
                     ? "Begin"
                     : "Next Word"}
             </button>
+            <section className='counter grid place-items-center'>
+                <span className='text-gray-200 text-xl'>Word Counter</span>
+                <h2 className='text-gray-100 inline-block text-4xl'>
+                    {state.count}{" "}
+                </h2>
+            </section>
         </div>
     );
 }
