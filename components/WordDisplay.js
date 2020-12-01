@@ -18,7 +18,7 @@ function ChosenWord({ chosenWord, color }) {
     if (chosenWord.partPosition == "start") {
         return (
             <>
-                <div className='wordCard mr-2'>
+                <div className='wordCard mr-1 md:mr-2'>
                     <div className={`start ${printClassWithColor(color)}`}>
                         {chosenWord.wordPart}
                     </div>
@@ -31,7 +31,7 @@ function ChosenWord({ chosenWord, color }) {
     }
     return (
         <>
-            <div className='wordCard mr-2'>
+            <div className='wordCard mr-1 md:mr-2'>
                 <div className='start'>{chosenWord.wordCap}</div>
             </div>
             <div className='wordCard'>
