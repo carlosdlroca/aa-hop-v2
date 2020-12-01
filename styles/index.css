@@ -131,7 +131,7 @@
   }
 
   .wordCard {
-    @apply grid items-center bg-gray-100 text-wordCard-sm select-none p-5 h-64 w-2/4;
+    @apply grid items-center bg-gray-100 text-wordCard-lg select-none p-2 h-64 w-2/4;
   }
 
   @screen md {
@@ -140,7 +140,7 @@
     }
 
     .wordCard {
-      @apply text-wordCard-lg;
+      @apply text-wordCard-sm;
     }
   }
 
