@@ -14,8 +14,8 @@ module.exports = {
                 arrow: "url('/arrow.svg')",
             }),
             fontSize: {
-                "wordCard-lg": "3.7rem",
-                "wordCard-sm": "3rem",
+                "wordCard-lg": "3.5rem",
+                "wordCard-sm": "4.3rem",
             },
             colors: {
                 orange: colors.orange,
