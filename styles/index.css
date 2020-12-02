@@ -16,24 +16,26 @@
 
 @layer components {
   html {
-    @apply bg-gray-800;
+    @apply bg-gray-800 overflow-x-hidden;
   }
 
   .cards {
-    @apply grid grid-cols-1 gap-8 justify-items-center pb-12 gap-y-16;
+    @apply grid grid-cols-1 gap-4 justify-items-center pb-12 gap-y-5;
     margin: 0 auto;
     width: min(95vw, 65rem);
   }
 
   .card {
-    @apply text-2xl text-center font-bold font-sans grid place-items-center shadow text-gray-100 rounded;
-    height: 18rem;
-    width: 18rem;
+    @apply text-4xl text-center font-bold font-sans grid place-items-center shadow text-gray-100 rounded w-full py-8;
   }
-
+  
   @screen md {
     .cards {
-      @apply grid-cols-2
+      @apply grid-cols-2 gap-8 gap-y-16;
+    }
+
+    .card {
+      @apply h-72 w-72 text-2xl;
     }
   }
 
