@@ -8,35 +8,33 @@ export default function WordDisplay({ chosenWord, color }) {
                 if (chosenWord.hasOwnProperty("single")) {
                     return <SingleChosenWord wordCap={chosenWord.wordCap} />;
                 }
-                return <ChosenWord chosenWord={chosenWord} color={color} />;
+                return <ChosenWord {...chosenWord} color={color} />;
             })()}
         </div>
     );
 }
 
-function ChosenWord({ chosenWord, color }) {
-    if (chosenWord.partPosition == "start") {
-        return (
-            <>
-                <div className='wordCard mr-1 md:mr-2'>
-                    <div className={`start ${printClassWithColor(color)}`}>
-                        {chosenWord.wordPart}
-                    </div>
-                </div>
-                <div className='wordCard'>
-                    <div className='end'>{chosenWord.wordCap}</div>
-                </div>
-            </>
-        );
-    }
+function ChosenWord({ partPosition, wordPart, wordCap, color }) {
     return (
         <>
             <div className='wordCard mr-1 md:mr-2'>
-                <div className='start'>{chosenWord.wordCap}</div>
+                <div
+                    className={`start ${
+                        partPosition == "start"
+                            ? printClassWithColor(color)
+                            : ""
+                    }`}
+                >
+                    {partPosition == "start" ? wordPart : wordCap}
+                </div>
             </div>
             <div className='wordCard'>
-                <div className={`end ${printClassWithColor(color)}`}>
-                    {chosenWord.wordPart}
+                <div
+                    className={`end ${
+                        partPosition == "end" ? printClassWithColor(color) : ""
+                    }`}
+                >
+                    {partPosition == "end" ? wordPart : wordCap}
                 </div>
             </div>
         </>
