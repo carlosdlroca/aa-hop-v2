@@ -18,22 +18,12 @@ function ChosenWord({ partPosition, wordPart, wordCap, color }) {
     return (
         <>
             <div className='wordCard mr-1 md:mr-2'>
-                <div
-                    className={`start ${
-                        partPosition == "start"
-                            ? printClassWithColor(color)
-                            : ""
-                    }`}
-                >
+                <div className={`start ${partPosition == "start" ? printClassWithColor(color) : ""}`}>
                     {partPosition == "start" ? wordPart : wordCap}
                 </div>
             </div>
             <div className='wordCard'>
-                <div
-                    className={`end ${
-                        partPosition == "end" ? printClassWithColor(color) : ""
-                    }`}
-                >
+                <div className={`end ${partPosition == "end" ? printClassWithColor(color) : ""}`}>
                     {partPosition == "end" ? wordPart : wordCap}
                 </div>
             </div>
