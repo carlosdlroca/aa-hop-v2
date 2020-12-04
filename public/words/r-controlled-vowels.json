@@ -87,100 +87,139 @@
         },
         "or": {
             "or": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "horn",
-                    "fork",
-                    "north",
-                    "corn",
-                    "torch",
-                    "cork",
-                    "or",
-                    "fork",
-                    "storm",
-                    "torn",
-                    "short",
-                    "porch",
-                    "cord",
-                    "fort",
-                    "stork",
-                    "sport",
-                    "born",
-                    "thorn"
+                    " "
+                ]
+            },
+            "orn": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "h",
+                    "c",
+                    "t",
+                    "b",
+                    "th"
+                ]
+            },
+            "ork": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "f",
+                    "c",
+                    "st"
+                ]
+            },
+            "orch": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "t",
+                    "p"
+                ]
+            },
+            "orm": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "st"
+                ]
+            },
+            "ort": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "sh",
+                    "f",
+                    "sp"
+                ]
+            },
+            "ord": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "c"
+                ]
+            },
+            "orth": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "n"
                 ]
             }
         },
         "ore": {
             "ore": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "more",
-                    "wore",
-                    "snore",
-                    "core",
-                    "shore",
-                    "bore",
-                    "score",
-                    "store"
+                    "m",
+                    "w",
+                    "sn",
+                    "c",
+                    "sh",
+                    "b",
+                    "sc",
+                    "st"
                 ]
             }
         },
         "eer": {
             "eer": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "deer",
-                    "cheer",
-                    "steer"
+                    "d",
+                    "ch",
+                    "st"
                 ]
             }
         },
         "ear": {
             "ear": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "dear",
-                    "ear",
-                    "fear",
-                    "gear",
-                    "hear",
-                    "clear",
-                    "near",
-                    "rear",
-                    "spear",
-                    "tear",
-                    "year"
+                    "d",
+                    " ",
+                    "f",
+                    "g",
+                    "h",
+                    "cl",
+                    "n",
+                    "r",
+                    "sp",
+                    "t",
+                    "y"
                 ]
             }
         },
         "are": {
             "are": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "care",
-                    "rare",
-                    "flare",
-                    "bare",
-                    "glare",
-                    "dare",
-                    "scare",
-                    "fare",
-                    "share",
-                    "spare",
-                    "stare"
+                    "c",
+                    "r",
+                    "fl",
+                    "b",
+                    "gl",
+                    "d",
+                    "sc",
+                    "f",
+                    "sh",
+                    "sp",
+                    "st"
                 ]
             }
         },
         "air": {
             "air": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "pair",
-                    "air",
-                    "fair",
-                    "hair",
-                    "chair",
-                    "stairs"
+                    "p",
+                    " ",
+                    "f",
+                    "h",
+                    "ch"
+                ]
+            },
+            "airs": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "st"
                 ]
             }
         }
