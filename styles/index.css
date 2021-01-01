@@ -50,7 +50,7 @@
   }
 
   .card-orange {
-    @apply bg-gradient-to-tr from-orange-400 to-orange-600;
+    @apply bg-gradient-to-tr from-orange-400 to-orange-500;
   }
 
   .card-red {
@@ -58,11 +58,11 @@
   }
 
   .card-green {
-    @apply bg-gradient-to-tr from-green-300 to-green-600;
+    @apply bg-gradient-to-tr from-green-400 to-green-500;
   }
 
   .card-blue {
-    @apply bg-gradient-to-tr from-blue-400 to-blue-600;
+    @apply bg-gradient-to-tr from-blue-300 to-blue-600;
   }
 
   .card-purple {
