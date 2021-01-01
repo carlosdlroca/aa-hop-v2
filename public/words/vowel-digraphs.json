@@ -2,210 +2,382 @@
     "color": "green",
     "words": {
         "ee": {
-            "ee": {
+            "_": {
                 "single": true,
                 "wordCaps": [
-                    "meet",
-                    "keep",
-                    "sleep",
-                    "feet",
-                    "green",
-                    "bleed",
-                    "sheep",
-                    "tree",
-                    "bee",
-                    "cheek",
-                    "free",
-                    "teeth",
-                    "wheel",
-                    "queen",
-                    "creek",
-                    "eel",
-                    "sweet",
-                    "need"
+                    "eel"
+                ]
+            },
+            "eet": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "f",
+                    "sw",
+                    "m"
+                ]
+            },
+            "eep": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "k",
+                    "sl",
+                    "sh"
+                ]
+            },
+            "een": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "gr",
+                    "qu"
+                ]
+            },
+            "eed": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "bl",
+                    "n"
+                ]
+            },
+            "eek": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "ch",
+                    "cr"
+                ]
+            },
+            "eeth": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "t"
+                ]
+            },
+            "eel": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "wh"
+                ]
+            },
+            "ee": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "tr",
+                    "b",
+                    "fr"
                 ]
             }
         },
         "ea": {
-            "ea": {
+            "_": {
                 "single": true,
                 "wordCaps": [
-                    "meat",
-                    "beach",
-                    "beak",
-                    "creak",
-                    "pea",
-                    "read",
-                    "leaf",
-                    "teach",
-                    "beast",
-                    "peach",
-                    "real",
-                    "flea",
-                    "reach",
-                    "dream",
-                    "speak",
-                    "seal",
+                    "eat",
                     "each",
-                    "team"
+                    "east"
+                ]
+            },
+            "eat": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "m"
+                ]
+            },
+            "east": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b"
+                ]
+            },
+            "eal": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "r",
+                    "s"
+                ]
+            },
+            "eam": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "dr",
+                    "t"
+                ]
+            },
+            "ea": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "p",
+                    "fl"
+                ]
+            },
+            "ead": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "r"
+                ]
+            },
+            "eaf": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "l"
+                ]
+            },
+            "each": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "t",
+                    "p",
+                    "r"
+                ]
+            },
+            "eak": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "cr",
+                    "sp"
                 ]
             }
         },
         "ow": {
-            "ow": {
+            "_": {
                 "single": true,
                 "wordCaps": [
-                    "snow",
-                    "row",
-                    "own",
-                    "bow",
-                    "mow",
-                    "flow",
-                    "bowl",
-                    "tow",
-                    "crow",
-                    "glow",
-                    "show",
-                    "grow",
-                    "stow",
-                    "blow",
-                    "low",
-                    "slow"
+                    "own"
+                ]
+            },
+            "ow": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "sn",
+                    "r",
+                    "b",
+                    "m",
+                    "fl",
+                    "t",
+                    "cr",
+                    "gl",
+                    "sh",
+                    "gr",
+                    "st",
+                    "bl",
+                    "l",
+                    "sl"
+                ]
+            },
+            "owl": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b"
                 ]
             }
         },
         "oa": {
+            "_": {
+                "single": true,
+                "wordCaps": [
+                    "oat",
+                    "oak"
+                ]
+            },
             "oa": {
                 "single": true,
                 "wordCaps": [
-                    "coach",
-                    "toad",
-                    "coat",
-                    "cloak",
-                    "poach",
-                    "coal",
-                    "goat",
-                    "goal",
-                    "oat",
-                    "loaf",
-                    "load",
                     "foam",
-                    "oak",
-                    "float",
                     "soap",
-                    "road",
-                    "roam",
-                    "boat"
+                    "roam"
+                ]
+            },
+            "oaf": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "l"
+                ]
+            },
+            "oam": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "f",
+                    "r"
+                ]
+            },
+            "oap": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "s"
+                ]
+            },
+            "oak": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "cl"
+                ]
+            },
+            "oach": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "c",
+                    "p"
+                ]
+            },
+            "oad": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "t",
+                    "l",
+                    "r"
+                ]
+            },
+            "oat": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "c",
+                    "g",
+                    "fl",
+                    "b"
+                ]
+            },
+            "oal": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "c",
+                    "g"
                 ]
             }
         },
         "ai": {
-            "ai": {
+            "_": {
                 "single": true,
                 "wordCaps": [
-                    "rain",
-                    "paid",
-                    "hail",
-                    "rail",
-                    "snail",
-                    "raid",
-                    "grain",
-                    "sail",
-                    "trail",
-                    "chain",
-                    "train",
-                    "mail",
-                    "tail",
-                    "brain",
-                    "pail",
-                    "paint",
-                    "braid",
-                    "nail"
+                    "aid"
+                ]
+            },
+            "ain": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "r",
+                    "gr",
+                    "ch",
+                    "tr",
+                    "br",
+                    "p"
+                ]
+            },
+            "aint": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "p"
+                ]
+            },
+            "aid": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "p",
+                    "r",
+                    "br"
+                ]
+            },
+            "ail": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "h",
+                    "r",
+                    "sn",
+                    "s",
+                    "tr",
+                    "m",
+                    "t",
+                    "p",
+                    "n"
                 ]
             }
         },
         "ay": {
             "ay": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "bay",
-                    "lay",
-                    "way",
-                    "gray",
-                    "sway",
-                    "day",
-                    "may",
-                    "clay",
-                    "tray",
-                    "pay",
-                    "hay",
-                    "play",
-                    "ray",
-                    "jay",
-                    "say",
-                    "stay",
-                    "Sunday"
+                    "b",
+                    "l",
+                    "w",
+                    "gr",
+                    "sw",
+                    "d",
+                    "m",
+                    "cl",
+                    "tr",
+                    "p",
+                    "h",
+                    "pl",
+                    "r",
+                    "j",
+                    "s",
+                    "st",
+                    "Sund"
                 ]
             }
         },
         "y /i/": {
             "y": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "cry",
-                    "my",
-                    "pry",
-                    "shy",
-                    "by",
-                    "sky",
-                    "dry",
-                    "spy",
-                    "fly",
-                    "try",
-                    "fry",
-                    "why"
+                    "cr",
+                    "m",
+                    "pr",
+                    "sh",
+                    "b",
+                    "sk",
+                    "dr",
+                    "sp",
+                    "fl",
+                    "tr",
+                    "fr",
+                    "wh"
                 ]
             }
         },
         "y /e/": {
             "y": {
-                "single": true,
+                "partPosition": "end",
                 "wordCaps": [
-                    "puppy",
-                    "rocky",
-                    "sunny",
-                    "tricky",
-                    "shady",
-                    "windy",
-                    "fuzzy",
-                    "dizzy",
-                    "happy",
-                    "lucky",
-                    "empty",
-                    "hungry",
-                    "skinny",
-                    "safety",
-                    "sticky",
-                    "funny",
-                    "baby",
-                    "candy"
+                    "pupp",
+                    "rock",
+                    "sunn",
+                    "trick",
+                    "shad",
+                    "wind",
+                    "fuzz",
+                    "dizz",
+                    "happ",
+                    "luck",
+                    "empt",
+                    "hungr",
+                    "skinn",
+                    "safet",
+                    "stick",
+                    "funn",
+                    "bab",
+                    "cand"
                 ]
             }
         },
         "all": {
-            "a": {
+            "_": {
                 "single": true,
                 "wordCaps": [
-                    "ball",
-                    "mall",
-                    "call",
-                    "all",
-                    "fall",
-                    "tall",
-                    "wall",
-                    "small",
-                    "hall",
-                    "stall"
+                    "all"
+                ]
+            },
+            "all": {
+                "partPosition": "end",
+                "wordCaps": [
+                    "b",
+                    "m",
+                    "c",
+                    "f",
+                    "t",
+                    "w",
+                    "sm",
+                    "h",
+                    "st"
                 ]
             }
         }
