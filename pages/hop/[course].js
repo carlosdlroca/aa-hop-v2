@@ -8,7 +8,7 @@ export default function Course({ course, file }) {
 
     function playAudio() {
         audioRef.current.currentTime = 0;
-        audioRef.current.volume = 0.15;
+        audioRef.current.volume = 0.10;
         audioRef.current.play();
     }
 
