@@ -10,6 +10,8 @@ export const initialState = {
     words: {},
     count: 0,
     chosenWord: {},
+    muted: true,
+    previousWords: [],
 };
 
 export function reducer(file) {
@@ -44,19 +46,34 @@ export function reducer(file) {
             case "RESET_COUNT":
                 return { ...state, count: 0 };
             case "RESET_STATE":
-                return initialState;
+                return { ...initialState, muted: state.muted };
+            case "REDO_LAST_WORD":
+                const prevWordsLen = state.previousWords.length;
+                const newPreviousWords = [];
+                state.previousWords.forEach((word, idx) => {
+                    if (idx < prevWordsLen - 1) {
+                        newPreviousWords.push(word);
+                    }
+                });
+                return {
+                    ...state,
+                    previousWords: newPreviousWords,
+                    chosenWord: state.previousWords[prevWordsLen - 1],
+                    count: state.count - 1,
+                };
             case "CHOOSE_WORD":
                 if (Object.keys(state.words).length < 1) {
                     return { ...state, chosenWord: {} };
                 }
-                const [
-                    newChosenWord,
-                    newWords,
-                    removeActiveFocus,
-                ] = chooseRandomWord(state.words);
+                const [newChosenWord, newWords, removeActiveFocus] =
+                    chooseRandomWord(state.words);
                 if (removeActiveFocus !== "") {
                     return {
                         ...state,
+                        previousWords: [
+                            ...state.previousWords,
+                            state.chosenWord,
+                        ],
                         chosenWord: newChosenWord,
                         words: newWords,
                         activeButtons: state.activeButtons.filter(
@@ -67,10 +84,13 @@ export function reducer(file) {
                 }
                 return {
                     ...state,
+                    previousWords: [...state.previousWords, state.chosenWord],
                     chosenWord: newChosenWord,
                     words: newWords,
                     count: state.count + 1,
                 };
+            case "TOGGLE_MUTE":
+                return { ...state, muted: !state.muted };
             default:
                 return state;
         }
