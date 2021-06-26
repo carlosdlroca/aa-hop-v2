@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import "@babel/polyfill";
 
 import Buttons from "./Buttons";
 import WordDisplay from "./WordDisplay";
