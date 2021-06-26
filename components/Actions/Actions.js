@@ -76,7 +76,7 @@ export default function Actions({ playAudio }) {
     // Update word when transcript pics up a word
     useEffect(() => {
         const words = transcript.split(" ");
-        const currentWordSaid = words[words.length - 1].toLowerCase();
+        const currentWordSaid = words[words.length - 1];
 
         const { chosenWord } = appState;
 
@@ -87,17 +87,16 @@ export default function Actions({ playAudio }) {
         if (
             currentWordSaid == "next" ||
             (Object.keys(appState.chosenWord).length < 1 &&
-                currentWordSaid == "start")
+                currentWordSaid.toLowerCase() == "start")
         ) {
             dispatchNewWord();
         }
 
-        if (
-            constructWord(chosenWord).toLowerCase() ==
-            currentWordSaid.toLowerCase()
-        ) {
+        if (constructWord(chosenWord) == currentWordSaid.toLowerCase()) {
             dispatchNewWord();
         }
+
+        return resetTranscript;
     }, [transcript]);
 
     function resetActionsState() {
