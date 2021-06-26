@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { StateContext } from "../utils/hooks/Context";
 import styled from "styled-components";
 
 const WordWrapper = styled.div`
@@ -42,10 +44,18 @@ const WordCard = styled.div`
     }
 `;
 
-function WordDisplay({ chosenWord }) {
+function WordDisplay() {
+    // context returns [state, dispatch]
+    // but we dont need dispatch so we dont include it here
+    const [state] = useContext(StateContext);
+    const { chosenWord } = state;
     // If there is no chosen word yet
     if (Object.keys(chosenWord).length < 1) {
-        return <WordCard>Begin</WordCard>;
+        return (
+            <WordCard>
+                {state.voiceRecognitionIsOn ? 'Say "Start"' : "Start"}
+            </WordCard>
+        );
     }
 
     // If chosen word is not broken apart
