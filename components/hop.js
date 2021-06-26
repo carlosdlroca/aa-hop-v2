@@ -91,7 +91,7 @@ function DetailsFC() {
             <h3>
                 {state.voiceRecognitionIsOn ? (
                     <>
-                        Say <span id='highlight'>Start</span> to begin
+                        Say <span id='highlight'>Begin</span> to begin
                     </>
                 ) : null}
             </h3>

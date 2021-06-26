@@ -82,14 +82,14 @@ export default function Actions({ playAudio }) {
 
         const { chosenWord } = appState;
 
-        if (currentWordSaid == "reset") {
+        if (currentWordSaid.toLowerCase() == "reset") {
             resetAllState();
         }
 
         if (
-            currentWordSaid == "next" ||
+            currentWordSaid.toLowerCase() == "next" ||
             (Object.keys(appState.chosenWord).length < 1 &&
-                currentWordSaid.toLowerCase() == "start")
+                currentWordSaid.toLowerCase() == "begin")
         ) {
             dispatchNewWord();
         }
