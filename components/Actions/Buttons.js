@@ -77,6 +77,24 @@ export const NextButtonVoid = styled.div`
     width: var(--button-void-size);
 `;
 
+const pulse = keyframes`
+    0% {
+        transform: scale(1);
+    }
+
+    33% {
+        transform: scale(.8);
+    }
+
+    66% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.25);
+    }
+`;
+
 export const NextButton = styled(Button)`
     height: var(--next-button-size);
     width: var(--next-button-size);
@@ -86,6 +104,9 @@ export const NextButton = styled(Button)`
     border-radius: 50%;
 
     transition: background-color 0.2s ease;
+
+    animation: ${({ listening }) => (listening ? pulse : "null")} 0.6s linear
+        infinite;
 
     svg path {
         fill: var(--color-white);

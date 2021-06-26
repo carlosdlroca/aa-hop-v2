@@ -65,11 +65,14 @@ export default function Menu({
     muted,
     dispatch,
     actionState,
+    resetTranscript,
     resetActionsState,
     toggleVoiceRecognition,
+    browserSupportsSpeechRecognition,
 }) {
     function onClickStartOver() {
         resetActionsState();
+        resetTranscript();
         dispatch({ type: "RESET_STATE" });
     }
 
@@ -77,13 +80,17 @@ export default function Menu({
         dispatch({ type: "TOGGLE_MUTE" });
     }
 
+    const tab = actionState.menuIsShown ? "0" : "-1";
+
     return (
         <MenuWrapper>
             <RelativeWrapper>
                 <MainMenu
                     className={actionState.menuIsShown ? "menuIsShown" : ""}>
-                    <MenuItem onClick={onClickStartOver}>Start Over</MenuItem>
-                    <MenuItem onClick={toggleMuted}>
+                    <MenuItem tabIndex={tab} onClick={onClickStartOver}>
+                        Start Over
+                    </MenuItem>
+                    <MenuItem tabIndex={tab} onClick={toggleMuted}>
                         <span>{muted ? "Unmute" : "Mute"}</span>
                         {muted ? (
                             <svg version='1.1' viewBox='0 0 321.957 321.957'>
@@ -124,26 +131,29 @@ export default function Menu({
                             </svg>
                         )}
                     </MenuItem>
-                    <MenuItem onClick={toggleVoiceRecognition}>
-                        <span>
-                            {actionState.voiceRecognitionIsOn
-                                ? "Don't use voice"
-                                : "Use Voice"}
-                        </span>
-                        {actionState.voiceRecognitionIsOn ? (
-                            <svg
-                                version='1.1'
-                                xmlns='http://www.w3.org/2000/svg'
-                                viewBox='0 0 475.085 475.085'>
-                                <title>Microphone is On</title>
-                                <path
-                                    d='M237.541,328.897c25.128,0,46.632-8.946,64.523-26.83c17.888-17.884,26.833-39.399,26.833-64.525V91.365
+                    {browserSupportsSpeechRecognition && navigator.onLine ? (
+                        <MenuItem
+                            tabIndex={tab}
+                            onClick={toggleVoiceRecognition}>
+                            <span>
+                                {actionState.voiceRecognitionIsOn
+                                    ? "Don't use voice"
+                                    : "Use Voice"}
+                            </span>
+                            {actionState.voiceRecognitionIsOn ? (
+                                <svg
+                                    version='1.1'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 475.085 475.085'>
+                                    <title>Microphone is On</title>
+                                    <path
+                                        d='M237.541,328.897c25.128,0,46.632-8.946,64.523-26.83c17.888-17.884,26.833-39.399,26.833-64.525V91.365
 			c0-25.126-8.938-46.632-26.833-64.525C284.173,8.951,262.669,0,237.541,0c-25.125,0-46.632,8.951-64.524,26.84
 			c-17.893,17.89-26.838,39.399-26.838,64.525v146.177c0,25.125,8.949,46.641,26.838,64.525
 			C190.906,319.951,212.416,328.897,237.541,328.897z'
-                                />
-                                <path
-                                    d='M396.563,188.15c-3.606-3.617-7.898-5.426-12.847-5.426c-4.944,0-9.226,1.809-12.847,5.426
+                                    />
+                                    <path
+                                        d='M396.563,188.15c-3.606-3.617-7.898-5.426-12.847-5.426c-4.944,0-9.226,1.809-12.847,5.426
 			c-3.613,3.616-5.421,7.898-5.421,12.845v36.547c0,35.214-12.518,65.333-37.548,90.362c-25.022,25.03-55.145,37.545-90.36,37.545
 			c-35.214,0-65.334-12.515-90.365-37.545c-25.028-25.022-37.541-55.147-37.541-90.362v-36.547c0-4.947-1.809-9.229-5.424-12.845
 			c-3.617-3.617-7.895-5.426-12.847-5.426c-4.952,0-9.235,1.809-12.85,5.426c-3.618,3.616-5.426,7.898-5.426,12.845v36.547
@@ -153,21 +163,21 @@ export default function Menu({
 			c0-4.948-1.81-9.232-5.431-12.847c-3.61-3.617-7.898-5.428-12.847-5.428h-73.08v-37.691
 			c41.299-4.565,75.985-22.408,104.061-53.526c28.076-31.117,42.12-67.711,42.12-109.776v-36.547
 			C401.998,196.049,400.185,191.77,396.563,188.15z'
-                                />
-                            </svg>
-                        ) : (
-                            <svg
-                                version='1.1'
-                                xmlns='http://www.w3.org/2000/svg'
-                                viewBox='0 0 475.092 475.092'>
-                                <title>Microphone is Off</title>
-                                <path
-                                    d='M113.922,269.803c-2.856-11.419-4.283-22.172-4.283-32.26v-36.55c0-4.947-1.809-9.229-5.424-12.847
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    version='1.1'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 475.092 475.092'>
+                                    <title>Microphone is Off</title>
+                                    <path
+                                        d='M113.922,269.803c-2.856-11.419-4.283-22.172-4.283-32.26v-36.55c0-4.947-1.809-9.229-5.424-12.847
 			c-3.617-3.616-7.898-5.424-12.847-5.424c-4.952,0-9.235,1.809-12.851,5.424c-3.617,3.617-5.426,7.9-5.426,12.847v36.547
 			c0,21.129,3.999,41.494,11.993,61.106L113.922,269.803z'
-                                />
-                                <path
-                                    d='M237.545,328.897c25.126,0,46.638-8.946,64.521-26.83c17.891-17.884,26.837-39.399,26.837-64.525v-36.547L431.972,97.929
+                                    />
+                                    <path
+                                        d='M237.545,328.897c25.126,0,46.638-8.946,64.521-26.83c17.891-17.884,26.837-39.399,26.837-64.525v-36.547L431.972,97.929
 			c1.902-1.903,2.854-4.093,2.854-6.567c0-2.474-0.952-4.664-2.854-6.567l-23.407-23.413c-1.91-1.906-4.097-2.856-6.57-2.856
 			c-2.472,0-4.661,0.95-6.564,2.856L43.117,413.698c-1.903,1.902-2.852,4.093-2.852,6.563c0,2.478,0.949,4.668,2.852,6.57
 			l23.411,23.411c1.904,1.903,4.095,2.851,6.567,2.851c2.475,0,4.665-0.947,6.567-2.851l72.519-72.519
@@ -179,14 +189,15 @@ export default function Menu({
 			c-4.945,0-9.229,1.809-12.847,5.426c-3.617,3.616-5.424,7.898-5.424,12.845v36.547c0,35.214-12.519,65.333-37.545,90.359
 			s-55.151,37.544-90.362,37.544c-20.557,0-40.065-4.849-58.529-14.561l27.408-27.401
 			C216.707,327.097,227.079,328.897,237.545,328.897z'
-                                />
-                                <path
-                                    d='M290.223,16.849C274.518,5.618,256.959,0,237.545,0c-25.125,0-46.635,8.951-64.524,26.84
+                                    />
+                                    <path
+                                        d='M290.223,16.849C274.518,5.618,256.959,0,237.545,0c-25.125,0-46.635,8.951-64.524,26.84
 			c-17.89,17.89-26.835,39.399-26.835,64.525v146.177L323.483,60.244C317.008,42.543,305.927,28.077,290.223,16.849z'
-                                />
-                            </svg>
-                        )}
-                    </MenuItem>
+                                    />
+                                </svg>
+                            )}
+                        </MenuItem>
+                    ) : null}
                 </MainMenu>
                 <MenuConcealer />
             </RelativeWrapper>

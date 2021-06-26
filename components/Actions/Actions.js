@@ -1,5 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
+
+import SpeechRecognition, {
+    useSpeechRecognition,
+} from "react-speech-recognition";
 
 import { AnimationButton, NextButtonVoid, NextButton } from "./Buttons";
 import Menu from "./Menu";
@@ -47,6 +51,23 @@ export default function Actions({ state, dispatch, playAudio }) {
         voiceRecognitionIsOn: false,
     });
 
+    const {
+        transcript,
+        listening,
+        resetTranscript,
+        browserSupportsSpeechRecognition,
+    } = useSpeechRecognition();
+
+    useEffect(() => {
+        if (actionState.voiceRecognitionIsOn) {
+            SpeechRecognition.startListening({ continuous: true });
+        }
+
+        return () => {
+            SpeechRecognition.stopListening();
+        };
+    }, [actionState.voiceRecognitionIsOn]);
+
     function resetActionsState() {
         setActionsState({
             rotateAnimationIsOn: false,
@@ -92,10 +113,15 @@ export default function Actions({ state, dispatch, playAudio }) {
                 muted={state.muted}
                 dispatch={dispatch}
                 actionState={actionState}
+                resetTranscript={resetTranscript}
                 resetActionsState={resetActionsState}
                 toggleVoiceRecognition={toggleVoiceRecognition}
+                browserSupportsSpeechRecognition={
+                    browserSupportsSpeechRecognition
+                }
             />
             <ActionsBar>
+                <p>{transcript}</p>
                 <ButtonsWrapper>
                     <AnimationButton
                         disabled={
@@ -140,7 +166,10 @@ export default function Actions({ state, dispatch, playAudio }) {
                         </svg>
                     </AnimationButton>
                     <NextButtonVoid aria-hidden='true'>
-                        <NextButton title='Next Word' onClick={dispatchNewWord}>
+                        <NextButton
+                            title='Next Word'
+                            onClick={dispatchNewWord}
+                            listening={listening}>
                             {actionState.voiceRecognitionIsOn ? (
                                 <svg
                                     viewBox='0 0 512 512'
