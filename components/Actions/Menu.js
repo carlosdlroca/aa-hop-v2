@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useContext } from "react";
+import { StateContext } from "../../utils/hooks/Context";
 
 const MenuWrapper = styled.div`
     position: absolute;
@@ -62,19 +64,11 @@ const RelativeWrapper = styled.div`
 `;
 
 export default function Menu({
-    muted,
-    dispatch,
     actionState,
-    resetTranscript,
-    resetActionsState,
-    toggleVoiceRecognition,
+    resetAllState,
     browserSupportsSpeechRecognition,
 }) {
-    function onClickStartOver() {
-        resetActionsState();
-        resetTranscript();
-        dispatch({ type: "RESET_STATE" });
-    }
+    const [appState, dispatch] = useContext(StateContext);
 
     function toggleMuted() {
         dispatch({ type: "TOGGLE_MUTE" });
@@ -87,12 +81,12 @@ export default function Menu({
             <RelativeWrapper>
                 <MainMenu
                     className={actionState.menuIsShown ? "menuIsShown" : ""}>
-                    <MenuItem tabIndex={tab} onClick={onClickStartOver}>
+                    <MenuItem tabIndex={tab} onClick={resetAllState}>
                         Start Over
                     </MenuItem>
                     <MenuItem tabIndex={tab} onClick={toggleMuted}>
-                        <span>{muted ? "Unmute" : "Mute"}</span>
-                        {muted ? (
+                        <span>{appState.muted ? "Unmute" : "Mute"}</span>
+                        {appState.muted ? (
                             <svg version='1.1' viewBox='0 0 321.957 321.957'>
                                 <g transform='translate(0 -562.36)'>
                                     <path
@@ -134,13 +128,15 @@ export default function Menu({
                     {browserSupportsSpeechRecognition && navigator.onLine ? (
                         <MenuItem
                             tabIndex={tab}
-                            onClick={toggleVoiceRecognition}>
+                            onClick={() =>
+                                dispatch({ type: "TOGGLE_VOICE_RECOGNITION" })
+                            }>
                             <span>
-                                {actionState.voiceRecognitionIsOn
+                                {appState.voiceRecognitionIsOn
                                     ? "Don't use voice"
                                     : "Use Voice"}
                             </span>
-                            {actionState.voiceRecognitionIsOn ? (
+                            {appState.voiceRecognitionIsOn ? (
                                 <svg
                                     version='1.1'
                                     xmlns='http://www.w3.org/2000/svg'
