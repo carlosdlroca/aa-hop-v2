@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import styled from "styled-components";
 
 import SpeechRecognition, {
@@ -7,6 +7,9 @@ import SpeechRecognition, {
 
 import { AnimationButton, NextButtonVoid, NextButton } from "./Buttons";
 import Menu from "./Menu";
+import { StateContext } from "../../utils/hooks/Context";
+
+import constructWord from "../../utils/constructWord";
 
 const ActionsWrapper = styled.div`
     position: relative;
@@ -43,12 +46,13 @@ const ButtonsWrapper = styled.div`
     height: 100%;
 `;
 
-export default function Actions({ state, dispatch, playAudio }) {
+export default function Actions({ playAudio }) {
+    const [appState, dispatch] = useContext(StateContext);
+
     const [actionState, setActionsState] = useState({
         redoAnimation: false,
         menuAnimation: false,
         menuIsShown: false,
-        voiceRecognitionIsOn: false,
     });
 
     const {
@@ -58,21 +62,57 @@ export default function Actions({ state, dispatch, playAudio }) {
         browserSupportsSpeechRecognition,
     } = useSpeechRecognition();
 
+    // Start Microphone
     useEffect(() => {
-        if (actionState.voiceRecognitionIsOn) {
+        if (appState.voiceRecognitionIsOn) {
             SpeechRecognition.startListening({ continuous: true });
         }
 
         return () => {
             SpeechRecognition.stopListening();
         };
-    }, [actionState.voiceRecognitionIsOn]);
+    }, [appState.voiceRecognitionIsOn]);
+
+    // Update word when transcript pics up a word
+    useEffect(() => {
+        const words = transcript.split(" ");
+        const currentWordSaid = words[words.length - 1].toLowerCase();
+
+        const { chosenWord } = appState;
+
+        if (currentWordSaid == "reset") {
+            resetAllState();
+        }
+
+        if (
+            currentWordSaid == "next" ||
+            (Object.keys(appState.chosenWord).length < 1 &&
+                currentWordSaid == "start")
+        ) {
+            dispatchNewWord();
+        }
+
+        if (
+            constructWord(chosenWord).toLowerCase() ==
+            currentWordSaid.toLowerCase()
+        ) {
+            dispatchNewWord();
+        }
+    }, [transcript]);
 
     function resetActionsState() {
         setActionsState({
             rotateAnimationIsOn: false,
             menuIsShown: false,
         });
+    }
+    [0, 1, 2];
+
+    function resetAllState() {
+        resetActionsState(); // Close Menu
+        resetTranscript();
+        dispatch({ type: "RESET_STATE" });
+        SpeechRecognition.abortListening();
     }
 
     function setRotateAnimation(icon, value) {
@@ -82,6 +122,7 @@ export default function Actions({ state, dispatch, playAudio }) {
         }));
     }
 
+    // This function fetches a new word for the WordDisplay Component
     function dispatchNewWord() {
         if (actionState.menuIsShown) {
             setActionsState((prevState) => ({
@@ -90,32 +131,20 @@ export default function Actions({ state, dispatch, playAudio }) {
                 menuAnimation: true,
             }));
         }
-        if (actionState.voiceRecognitionIsOn) return;
 
-        if (state.activeButtons.length > 0) {
-            if (!state.muted) {
+        if (appState.activeButtons.length > 0) {
+            if (!appState.muted) {
                 playAudio();
             }
             dispatch({ type: "CHOOSE_WORD" });
         }
     }
 
-    function toggleVoiceRecognition() {
-        setActionsState((prevState) => ({
-            ...prevState,
-            voiceRecognitionIsOn: !prevState.voiceRecognitionIsOn,
-        }));
-    }
-
     return (
         <ActionsWrapper>
             <Menu
-                muted={state.muted}
-                dispatch={dispatch}
                 actionState={actionState}
-                resetTranscript={resetTranscript}
-                resetActionsState={resetActionsState}
-                toggleVoiceRecognition={toggleVoiceRecognition}
+                resetAllState={resetAllState}
                 browserSupportsSpeechRecognition={
                     browserSupportsSpeechRecognition
                 }
@@ -125,7 +154,7 @@ export default function Actions({ state, dispatch, playAudio }) {
                 <ButtonsWrapper>
                     <AnimationButton
                         disabled={
-                            Object.keys(state.chosenWord).length < 1 ||
+                            Object.keys(appState.chosenWord).length < 1 ||
                             actionState.redoAnimation
                         }
                         rotateAnimationIsOn={actionState.redoAnimation}
@@ -170,7 +199,7 @@ export default function Actions({ state, dispatch, playAudio }) {
                             title='Next Word'
                             onClick={dispatchNewWord}
                             listening={listening}>
-                            {actionState.voiceRecognitionIsOn ? (
+                            {appState.voiceRecognitionIsOn ? (
                                 <svg
                                     viewBox='0 0 512 512'
                                     xmlns='http://www.w3.org/2000/svg'>
