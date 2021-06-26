@@ -150,7 +150,6 @@ export default function Actions({ playAudio }) {
                 }
             />
             <ActionsBar>
-                <p>{transcript}</p>
                 <ButtonsWrapper>
                     <AnimationButton
                         disabled={
