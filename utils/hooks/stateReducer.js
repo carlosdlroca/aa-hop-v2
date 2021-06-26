@@ -10,8 +10,9 @@ export const initialState = {
     words: {},
     count: 0,
     chosenWord: {},
-    muted: true,
     previousWords: [],
+    muted: true,
+    voiceRecognitionIsOn: false,
 };
 
 export function reducer(file) {
@@ -46,7 +47,11 @@ export function reducer(file) {
             case "RESET_COUNT":
                 return { ...state, count: 0 };
             case "RESET_STATE":
-                return { ...initialState, muted: state.muted };
+                return {
+                    ...initialState,
+                    muted: state.muted,
+                    voiceRecognitionIsOn: state.voiceRecognitionIsOn,
+                };
             case "REDO_LAST_WORD":
                 const prevWordsLen = state.previousWords.length;
                 const newPreviousWords = [];
@@ -65,6 +70,7 @@ export function reducer(file) {
                 if (Object.keys(state.words).length < 1) {
                     return { ...state, chosenWord: {} };
                 }
+
                 const [newChosenWord, newWords, removeActiveFocus] =
                     chooseRandomWord(state.words);
                 if (removeActiveFocus !== "") {
@@ -91,6 +97,11 @@ export function reducer(file) {
                 };
             case "TOGGLE_MUTE":
                 return { ...state, muted: !state.muted };
+            case "TOGGLE_VOICE_RECOGNITION":
+                return {
+                    ...state,
+                    voiceRecognitionIsOn: !state.voiceRecognitionIsOn,
+                };
             default:
                 return state;
         }
