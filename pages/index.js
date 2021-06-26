@@ -1,62 +1,153 @@
 import Link from "next/link";
 import Head from "next/head";
 
+import styled from "styled-components";
+
+const Cards = styled.section`
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 20rem;
+
+    margin: 0 auto;
+    width: min(90vw, 100rem);
+    padding: 10rem 0;
+
+    @media screen and (max-width: 46.25em) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 31.25em) {
+        grid-template-columns: 1fr;
+        padding: 5rem 0;
+        grid-auto-rows: 10rem;
+    }
+`;
+
+const Card = styled.a`
+    display: grid;
+    place-items: center;
+
+    background-color: var(--color-white);
+    color: var(--card-color, currentColor);
+    border: 3px solid var(--card-color, currentColor);
+    border-radius: var(--border-radius, 1rem);
+
+    font-size: var(--text-large);
+    font-weight: 500;
+    text-align: center;
+
+    padding: 1.6rem;
+    transition: background-color 0.2s ease;
+
+    &:hover,
+    &:focus {
+        background-color: var(--card-color, --color-gray-light);
+        color: var(--color-white);
+        cursor: pointer;
+    }
+`;
+
+const CenterItems = styled.div`
+    height: 100%;
+    display: grid;
+    place-items: center;
+`;
+
+const PageTitle = styled.h1`
+    font-size: var(--text-2xl);
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 8rem;
+
+    @media screen and (max-width: 46.25em) {
+        font-size: var(--text-large);
+    }
+`;
+
 export default function IndexPage() {
     return (
-        <div>
+        <>
             <Head>
                 <title>Adventures Ahead Phonics</title>
             </Head>
-            <div className='pageTitle'>
-                <h1 className='bg-gray-100 '>
-                    Adventures Ahead: Hooked on Phonics
-                </h1>
-            </div>
 
-            <section className='cards'>
-                <Link href='/hop/vowels'>
-                    <a className='card card-purple'>Vowels</a>
-                </Link>
-                <Link href='/hop/beginning-digraphs'>
-                    <a className='card card-orange'>Beginning Digraphs</a>
-                </Link>
-                <Link href='/hop/beginning-sblends'>
-                    <a className='card card-orange'>Beginning S-Blends</a>
-                </Link>
-                <Link href='/hop/beginning-lblends'>
-                    <a className='card card-orange'>Beginning L-Blends</a>
-                </Link>
-                <Link href='/hop/beginning-rblends'>
-                    <a className='card card-orange'>Beginning R-Blends</a>
-                </Link>
-                <Link href='/hop/ending-digraphs'>
-                    <a className='card card-red'>Ending Digraphs</a>
-                </Link>
-                <Link href='/hop/ending-blends'>
-                    <a className='card card-red'>Ending Blends</a>
-                </Link>
-                <Link href='/hop/suffixes'>
-                    <a className='card card-red'>Suffixes</a>
-                </Link>
-                <Link href='/hop/silent-e'>
-                    <a className='card card-green'>Silent E</a>
-                </Link>
-                <Link href='/hop/vowel-digraphs'>
-                    <a className='card card-green'>Vowel Digraphs</a>
-                </Link>
-                <Link href='/hop/r-controlled-vowels'>
-                    <a className='card card-green'>R-controlled Vowels</a>
-                </Link>
-                <Link href='/hop/digraphs-and-dipthongs'>
-                    <a className='card card-blue'>Digraphs & Dipthongs</a>
-                </Link>
-                <Link href='/hop/3-letter-beginning-blends'>
-                    <a className='card card-blue'>3 Letter Beginning Blends</a>
-                </Link>
-                <Link href='/hop/silent-letter-and-soft-C-G'>
-                    <a className='card card-blue'>Silent Letter and Soft C/G</a>
-                </Link>
-            </section>
-        </div>
+            <PageTitle>Adventures Ahead: Hooked on Phonics</PageTitle>
+
+            <CenterItems>
+                <Cards>
+                    <Link passHref href='/hop/vowels'>
+                        <Card style={{ "--card-color": "var(--color-purple)" }}>
+                            Vowels
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/beginning-digraphs'>
+                        <Card style={{ "--card-color": "var(--color-orange)" }}>
+                            Beginning Digraphs
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/beginning-sblends'>
+                        <Card style={{ "--card-color": "var(--color-orange)" }}>
+                            Beginning S-Blends
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/beginning-lblends'>
+                        <Card style={{ "--card-color": "var(--color-orange)" }}>
+                            Beginning L-Blends
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/beginning-rblends'>
+                        <Card style={{ "--card-color": "var(--color-orange)" }}>
+                            Beginning R-Blends
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/ending-digraphs'>
+                        <Card style={{ "--card-color": "var(--color-red)" }}>
+                            Ending Digraphs
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/ending-blends'>
+                        <Card style={{ "--card-color": "var(--color-red)" }}>
+                            Ending Blends
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/suffixes'>
+                        <Card style={{ "--card-color": "var(--color-red)" }}>
+                            Suffixes
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/silent-e'>
+                        <Card style={{ "--card-color": "var(--color-green)" }}>
+                            Silent E
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/vowel-digraphs'>
+                        <Card style={{ "--card-color": "var(--color-green)" }}>
+                            Vowel Digraphs
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/r-controlled-vowels'>
+                        <Card style={{ "--card-color": "var(--color-green)" }}>
+                            R-controlled Vowels
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/digraphs-and-dipthongs'>
+                        <Card style={{ "--card-color": "var(--color-blue)" }}>
+                            Digraphs & Dipthongs
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/3-letter-beginning-blends'>
+                        <Card style={{ "--card-color": "var(--color-blue)" }}>
+                            3 Letter Beginning Blends
+                        </Card>
+                    </Link>
+                    <Link passHref href='/hop/silent-letter-and-soft-C-G'>
+                        <Card style={{ "--card-color": "var(--color-blue)" }}>
+                            Silent Letter and Soft C/G
+                        </Card>
+                    </Link>
+                </Cards>
+            </CenterItems>
+        </>
     );
 }
