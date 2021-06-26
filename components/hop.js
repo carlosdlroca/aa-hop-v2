@@ -1,10 +1,11 @@
-import { useReducer } from "react";
+import { useContext } from "react";
 
 import Buttons from "./Buttons";
 import WordDisplay from "./WordDisplay";
 import Actions from "./Actions";
-import { reducer, initialState } from "../utils/hooks/stateReducer";
 import styled from "styled-components";
+
+import AppStateProvider, { StateContext } from "../utils/hooks/Context";
 
 const Wrapper = styled.div`
     // I need the bottom half of the app (The app under the button list)
@@ -44,29 +45,31 @@ const Details = styled.section`
 `;
 
 export default function HOP({ file, playAudio }) {
-    const [state, dispatch] = useReducer(reducer(file), initialState);
     return (
         <Wrapper>
-            <Buttons
-                color={file.color}
-                keys={Object.keys(file.words)}
-                dispatch={dispatch}
-                activeButtons={state.activeButtons}
-            />
-            <VerticalWrapper>
-                <WordDisplay chosenWord={state.chosenWord} />
-                <Details className='counter grid place-items-center'>
-                    <h2 id='WordCountTitle'>
-                        Word Counter
-                        <span id='WordCountNumber'>{state.count}</span>
-                    </h2>
-                </Details>
-                <Actions
-                    state={state}
-                    dispatch={dispatch}
-                    playAudio={playAudio}
-                />
-            </VerticalWrapper>
+            {/** Context provider */}
+            <AppStateProvider file={file}>
+                <Buttons keys={Object.keys(file.words)} />
+                <VerticalWrapper>
+                    {" "}
+                    <WordDisplay />
+                    <DetailsFC />
+                    <Actions playAudio={playAudio} />
+                </VerticalWrapper>
+            </AppStateProvider>
         </Wrapper>
+    );
+}
+
+function DetailsFC() {
+    const [state] = useContext(StateContext);
+
+    return (
+        <Details>
+            <h2 id='WordCountTitle'>
+                Word Counter
+                <span id='WordCountNumber'>{state.count}</span>
+            </h2>
+        </Details>
     );
 }
