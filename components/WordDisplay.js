@@ -42,6 +42,10 @@ const WordCard = styled.div`
     &:not(:only-child):last-child {
         text-align: start;
     }
+
+    @media screen and (max-width: 50em) {
+        font-size: var(--text-2xl);
+    }
 `;
 
 function WordDisplay() {
