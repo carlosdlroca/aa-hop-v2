@@ -92,13 +92,13 @@ export default function Actions({ playAudio }) {
                 currentWordSaid.toLowerCase() == "start")
         ) {
             dispatchNewWord();
-            resetTranscript();
         }
 
         if (constructWord(chosenWord) == currentWordSaid.toLowerCase()) {
             dispatchNewWord();
         }
 
+        resetTranscript();
         return resetTranscript;
     }, [transcript]);
 
