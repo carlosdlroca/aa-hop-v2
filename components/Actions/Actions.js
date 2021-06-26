@@ -78,6 +78,7 @@ export default function Actions({ playAudio }) {
     useEffect(() => {
         const words = transcript.split(" ");
         const currentWordSaid = words[words.length - 1];
+        console.log(currentWordSaid);
 
         const { chosenWord } = appState;
 
@@ -91,6 +92,7 @@ export default function Actions({ playAudio }) {
                 currentWordSaid.toLowerCase() == "start")
         ) {
             dispatchNewWord();
+            resetTranscript();
         }
 
         if (constructWord(chosenWord) == currentWordSaid.toLowerCase()) {
