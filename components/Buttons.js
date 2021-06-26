@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import { StateContext } from "../utils/hooks/Context";
 
 const ButtonsList = styled.section`
     display: flex;
@@ -60,7 +62,10 @@ const Button = styled.button`
     }
 `;
 
-export default function Buttons({ keys, dispatch, activeButtons }) {
+export default function Buttons({ keys }) {
+    const [appState, dispatch] = useContext(StateContext);
+    const { activeButtons } = appState;
+
     return (
         <ButtonsList>
             {keys.map((key) => (
