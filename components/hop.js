@@ -42,6 +42,23 @@ const Details = styled.section`
         font-size: var(--text-2xl);
         margin-left: 2rem;
     }
+
+    h3 {
+        font-size: var(--text-large);
+    }
+
+    #highlight {
+        color: var(--course-color);
+        font-size: 1.1em;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+
+    @media screen and (max-width: 50em) {
+        h3 {
+            font-size: var(--text-medium);
+        }
+    }
 `;
 
 export default function HOP({ file, playAudio }) {
@@ -70,6 +87,28 @@ function DetailsFC() {
                 Word Counter
                 <span id='WordCountNumber'>{state.count}</span>
             </h2>
+            <h3>
+                {state.voiceRecognitionIsOn ? (
+                    <>
+                        Say <span id='highlight'>Start</span> to begin
+                    </>
+                ) : null}
+            </h3>
+            <h3>
+                {state.voiceRecognitionIsOn ? (
+                    <>
+                        Say <span id='highlight'>Reset</span> to "Start over"
+                    </>
+                ) : null}
+            </h3>
+            <h3>
+                {state.voiceRecognitionIsOn ? (
+                    <>
+                        Say <span id='highlight'>Next</span> to choose a new
+                        word
+                    </>
+                ) : null}
+            </h3>
         </Details>
     );
 }
