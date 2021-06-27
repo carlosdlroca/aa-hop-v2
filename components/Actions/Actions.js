@@ -78,7 +78,6 @@ export default function Actions({ playAudio }) {
     useEffect(() => {
         const words = transcript.split(" ");
         const currentWordSaid = words[words.length - 1];
-        console.log(currentWordSaid);
 
         const { chosenWord } = appState;
 
