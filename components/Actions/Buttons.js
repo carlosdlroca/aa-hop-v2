@@ -71,7 +71,6 @@ export const NextButtonVoid = styled.div`
 
     background: var(--bg-color);
     border-radius: 50%;
-    border-bottom: 2px solid var(--course-color);
 
     height: var(--button-void-size);
     width: var(--button-void-size);
@@ -95,12 +94,11 @@ const pulse = keyframes`
     }
 `;
 
-export const NextButton = styled(Button)`
+export const NextButton = styled(Button).attrs(props=>({className:"clay"}))`
     height: var(--next-button-size);
     width: var(--next-button-size);
 
-    background-color: var(--course-color);
-    border: 2px solid var(--course-color);
+    --clay-background: var(--course-color);
     border-radius: 50%;
 
     transition: background-color 0.2s ease;
@@ -115,7 +113,7 @@ export const NextButton = styled(Button)`
 
     &:hover,
     &:focus {
-        background-color: var(--color-white);
+        --clay-background: var(--color-white);
 
         svg path {
             fill: var(--course-color);
