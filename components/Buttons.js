@@ -9,15 +9,13 @@ const ButtonsList = styled.section`
     align-items: center;
 `;
 
-const Button = styled.button`
+const Button = styled.button.attrs(props => ({className: "clay"}))`
     font-size: var(--text-large);
     font-weight: 500;
 
-    background-color: white;
+    --clay-background: white;
+    --clay-border-radius: var(--border-radius, 1rem);
     color: var(--course-color, black);
-
-    border: 2px solid var(--course-color);
-    border-radius: var(--border-radius, 1rem);
 
     padding: 1rem 5.4rem;
     margin-right: 1rem;
@@ -28,12 +26,12 @@ const Button = styled.button`
 
     &:hover,
     &:focus {
-        background-color: var(--course-color-light, #fff);
+        --clay-background: var(--course-color-light, #fff);
         cursor: pointer;
     }
 
     &.active {
-        background: var(--course-color, steelblue);
+        --clay-background: var(--course-color, steelblue);
         color: #fff;
     }
 
