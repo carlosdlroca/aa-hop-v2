@@ -24,27 +24,26 @@ const Cards = styled.section`
     }
 `;
 
-const Card = styled.a`
+const Card = styled.a.attrs(props => ({className:"clay"}))`
     display: grid;
     place-items: center;
 
-    background-color: var(--color-white);
-    color: var(--card-color, currentColor);
-    border: 3px solid var(--card-color, currentColor);
-    border-radius: var(--border-radius, 1rem);
+    color: var(--color-white);
+    --clay-background: var(--card-color, currentColor); // changes the background-color of the
+    --clay-border-radius: 4rem;
 
     font-size: var(--text-large);
     font-weight: 500;
     text-align: center;
+    text-decoration: none;
 
     padding: 1.6rem;
-    transition: background-color 0.2s ease;
+    transition: transform .1s linear;
 
     &:hover,
     &:focus {
-        background-color: var(--card-color, --color-gray-light);
-        color: var(--color-white);
         cursor: pointer;
+        transform: translateY(-5px);
     }
 `;
 
