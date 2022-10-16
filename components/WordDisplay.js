@@ -57,7 +57,7 @@ function WordDisplay() {
     if (Object.keys(chosenWord).length < 1) {
         return (
             <WordCard>
-                {state.voiceRecognitionIsOn ? 'Say "Begin"' : "Begin"}
+                {state.voiceRecognitionIsOn ? "Say 'Begin'" : "Begin"}
             </WordCard>
         );
     }
